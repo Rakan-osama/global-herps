@@ -1,0 +1,214 @@
+/* ═══════════════════════════════════════════════════════════════
+   CMS Live Preview — Split Layout + Sticky Header + Zoom Canvas
+   (Fixed: navbar overlap + correct z-index + correct sticky offset)
+   ═══════════════════════════════════════════════════════════════ */
+
+:root{
+  /* 🔧 SET THIS to your dashboard navbar height */
+  --dashboard-nav-height: 64px; /* <-- change to your nav height */
+  --cms-gap: 12px;
+
+  /* Sticky top = navbar height + small gap */
+  --cms-sticky-top: calc(var(--dashboard-nav-height) + var(--cms-gap));
+}
+
+/* ── Split Layout ────────────────────────────────────────────── */
+.cms-split-layout {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.cms-split-forms {
+  flex: 1 1 58%;
+  min-width: 0;
+}
+
+.cms-split-preview {
+  flex: 0 0 40%;
+  max-width: 40%;
+  position: sticky;
+  top: var(--cms-sticky-top);
+
+  /* ✅ IMPORTANT: keep below navbar.
+     Bootstrap fixed navbar is commonly z-index: 1030
+     So we use something comfortably lower. */
+  z-index: 100;
+
+  /* ✅ Full viewport height minus navbar+gaps */
+  height: calc(100vh - var(--cms-sticky-top) - var(--cms-gap));
+
+  align-self: flex-start;   /* sticky + flex reliability */
+  overflow: hidden;         /* column itself never scrolls */
+}
+
+/* ── Preview Card ────────────────────────────────────────────── */
+.cms-preview-panel .card {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  min-height: 0;            /* ✅ CRITICAL: internal overflow works */
+  position: relative;
+
+  /* ✅ prevents transformed iframe from painting above header */
+  isolation: isolate;
+}
+
+/* Sticky header ALWAYS visible (inside the card only) */
+.cms-preview-panel .preview-header {
+  position: sticky;
+  top: 0;
+
+  /* ✅ only needs to be above iframe inside the card,
+     NOT above the dashboard navbar */
+  z-index: 10;
+
+  background: #f8f9fa;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  flex-shrink: 0;
+}
+
+.cms-preview-panel .preview-header h6 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 0.82rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Body never scrolls; stage does */
+.cms-preview-panel .preview-body {
+  flex: 1 1 auto;
+  padding: 0;
+  background: #e9ecef;
+
+  overflow: hidden;         /* ✅ body does NOT scroll */
+  min-height: 0;            /* ✅ CRITICAL */
+}
+
+/* ── Scroll container ───────────────────────────────────────── */
+#cmsPreviewStage {
+  width: 100%;
+  height: 100%;
+  overflow: auto;           /* ✅ internal scroll here */
+  background: #e9ecef;
+
+  min-height: 0;
+  position: relative;
+  z-index: 0;
+
+  padding: 14px;            /* optional */
+}
+
+/* ── Zoom Canvas System ─────────────────────────────────────── */
+#cmsPreviewCanvas {
+  --preview-scale: 0.5;     /* default matches active button */
+  --vp-width: 1366px;
+  --vp-height: 700px;
+
+  width:  calc(var(--vp-width)  * var(--preview-scale));
+  height: calc(var(--vp-height) * var(--preview-scale));
+  position: relative;
+
+  background: #fff;
+  box-shadow: 0 2px 16px rgba(0,0,0,.12);
+  border-radius: 4px;
+  overflow: hidden;
+
+  margin: 0 auto;           /* center when smaller than stage */
+}
+
+#cmsPreviewCanvas iframe {
+  width: var(--vp-width);
+  height: var(--vp-height);
+  border: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  transform: scale(var(--preview-scale));
+  transform-origin: top left;
+  background: #fff;
+}
+
+/* ── Indicator ──────────────────────────────────────────────── */
+#cms-preview-indicator {
+  font-size: 0.72rem;
+  color: #6c757d;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+#cms-preview-indicator .spinner-border {
+  width: 14px;
+  height: 14px;
+  border-width: 2px;
+}
+
+/* ── Scale Buttons ──────────────────────────────────────────── */
+.cms-preview-scale-btns .btn {
+  padding: 2px 8px;
+  font-size: 0.68rem;
+  line-height: 1.4;
+}
+
+.cms-preview-scale-btns .btn.active {
+  background-color: #2ea140;
+  border-color: #2ea140;
+  color: #fff;
+}
+
+/* ── Toggle ─────────────────────────────────────────────────── */
+.cms-preview-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.82rem;
+  cursor: pointer;
+}
+
+.cms-preview-toggle input[type="checkbox"] {
+  width: 36px;
+  height: 20px;
+}
+
+/* When preview is hidden */
+.cms-split-layout.preview-hidden .cms-split-forms {
+  flex: 1 1 100%;
+}
+
+.cms-split-layout.preview-hidden .cms-split-preview {
+  display: none;
+}
+
+/* ── Responsive ─────────────────────────────────────────────── */
+@media (max-width: 1199px) {
+  .cms-split-layout {
+    flex-direction: column;
+  }
+
+  .cms-split-preview {
+    position: relative;
+    top: auto;
+    flex: 0 0 100%;
+    max-width: 100%;
+    height: 600px;
+    overflow: hidden;
+  }
+
+  #cmsPreviewCanvas {
+    --preview-scale: 0.5;
+  }
+}
