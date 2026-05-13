@@ -18,7 +18,6 @@
                      <a href="{{ route('client.products') }}" class="btn btn-outline">{{ _('Our Products') }} <i class="fa fa-arrow-right"></i><span></span></a>
                   </div>
                </div>
-               <img src="{{ asset('client/assets/images/slide-anim_green.png') }}" class="abs-img start-0 bottom-0 d-none d-sm-block" alt="">
             </div>
          </div>
 
@@ -36,7 +35,7 @@
                      <a href="{{ route('client.about') }}" class="btn btn-outline">{{ _('About Us') }} <i class="fa fa-arrow-right"></i><span></span></a>
                   </div>
                </div>
-               <img src="{{ asset('client/assets/images/slide-anim_green.png') }}" class="abs-img start-0 bottom-0 d-none d-sm-block" alt="">
+              
             </div>
          </div>
 
@@ -54,7 +53,7 @@
                      <a href="{{ route('client.contact') }}" class="btn btn-outline">{{ _('Contact Us') }} <i class="fa fa-arrow-right"></i><span></span></a>
                   </div>
                </div>
-               <img src="{{ asset('client/assets/images/slide-anim_green.png') }}" class="abs-img start-0 bottom-0 d-none d-sm-block" alt="">
+               
             </div>
          </div>
 

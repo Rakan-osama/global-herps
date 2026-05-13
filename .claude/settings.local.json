@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -o \"body{margin:[^}]*}\" \"C:/xampp/htdocs/green_harvest/public/client/assets/css/style.css\")",
+      "Read(//c/xampp/htdocs/green_harvest/public/client/assets/css/**)"
+    ]
+  }
+}

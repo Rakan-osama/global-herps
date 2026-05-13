@@ -7,8 +7,8 @@
       content="global herbs, egyptian herbs, egyptian mint, chamomile export, anise seeds, fenugreek export, coriander seeds, herbs export egypt, spices export, dried herbs egypt, tea herbs, herb supplier egypt">
    <meta name="author" content="Global Herbs">
    <title>Global Herbs</title>
-   <link rel="apple-touch-icon" href="{{ asset('client/assets/images/favicon-green.png') }}">
-   <link rel="shortcut icon" href="{{ asset('client/assets/images/favicon-green.png') }}">
+   <link rel="apple-touch-icon" href="{{ asset('client/assets/images/favicon-green.jpeg') }}">
+   <link rel="shortcut icon" href="{{ asset('client/assets/images/favicon-green.jpeg') }}">
    <!-- Google Fonts -->
    <link rel="preconnect" href="https://fonts.googleapis.com/">
    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>

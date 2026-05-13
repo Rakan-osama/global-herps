@@ -24,7 +24,7 @@
                         @if(!empty($site['settings']['company_logo']))
                            <img src="{{ asset('storage/' . $site['settings']['company_logo']) }}" alt="Logo" style="height:100px;">
                         @else
-                           <img src="{{ asset('client/assets/images/green-logo1.png') }}" alt="Logo" style="height:100px;">
+                           <img src="{{ asset('client/assets/images/green-logo1.jpeg') }}" alt="Logo" style="height:100px;">
                         @endif
                      </a>
                   </div>

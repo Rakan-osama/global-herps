@@ -6,7 +6,7 @@
             @if(!empty($site['settings']['company_logo']))
                <img src="{{ asset('storage/' . $site['settings']['company_logo']) }}" alt="{{ _('Logo') }}" style="width: 150px; height: 50px">
             @else
-               <img src="{{ asset('client/assets/images/green-logo1.png') }}" alt="{{ _('Logo') }}" style="width: 150px; height: 50px">
+               <img src="{{ asset('client/assets/images/green-logo1.jpeg') }}" alt="{{ _('Logo') }}" style="width: 150px; height: 50px">
             @endif
          </div>
          <!-- Close Button -->
@@ -112,10 +112,10 @@
                     class="img-fluid ms-3"
                     style="height: 70px;">
             @else
-               <img src="{{ asset('client/assets/images/green-logo1.png') }}"
+               <img src="{{ asset('client/assets/images/green-logo1.jpeg') }}"
                     alt="logo"
                     class="img-fluid ms-3"
-                    style="height: 70px;">
+                    style="height: 90px;">
             @endif
           </a>
 
@@ -150,7 +150,7 @@
                 @if(!empty($site['settings']['company_logo']))
                    <img src="{{ asset('storage/' . $site['settings']['company_logo']) }}" alt="Logo">
                 @else
-                   <img src="{{ asset('client/assets/images/green-logo1.png') }}" alt="Logo">
+                   <img src="{{ asset('client/assets/images/green-logo1.jpeg') }}" alt="Logo">
                 @endif
               </a>
 
