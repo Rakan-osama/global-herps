@@ -1,10 +1,10 @@
-<!-- Testimonial Section Start -->
+﻿<!-- Testimonial Section Start -->
 <section class="review-sec sec-padding position-relative overflow-hidden">
    <div class="container">
       <div class="row">
          <div class="col-lg-4">
             <div class="review-thumb">
-               <img class="img-fluid" src="{{ asset('client/assets/images/about-ft.jpg') }}" alt="review">
+               <img class="img-fluid" src="{{ asset('client/assets/images/herbs/10.jpg') }}" alt="review">
             </div>
          </div>
          <div class="col-lg-8">
@@ -43,3 +43,4 @@
    </div>
 </section>
 <!-- Testimonial Section End -->
+

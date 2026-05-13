@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 @include('client.main.html')
 
 <head>
@@ -13,7 +13,7 @@
 
    <!-- Hero Section Start -->
    <section class="promo-sec bg-cover jarallax" data-jarallax data-speed=".4">
-      <img src="{{ asset('client/assets/images/2148923173.jpg') }}" alt="" class="jarallax-img img-fluid">
+      <img src="{{ asset('client/assets/images/herbs/1.jpg') }}" alt="" class="jarallax-img img-fluid">
       <div class="parallax-overly"></div>
       <div class="container">
          <div class="row">
@@ -45,7 +45,7 @@
 
             <div class="col-lg-4">
                <div class="service-card2 round bg-info fadeInUp" data-delay=".2">
-                  <div class="serv-thumb" style="background-image: url('{{ asset('client/assets/images/2148923173.jpg') }}'); background-size: cover; background-position: center;">
+                  <div class="serv-thumb" style="background-image: url('{{ asset('client/assets/images/herbs/1.jpg') }}'); background-size: cover; background-position: center;">
                      <span class="icon round-2"><img src="{{ asset('client/assets/images/icons/serv1_green.png') }}" alt=""></span>
                   </div>
                   <h3 class="display-4">{{ _('Sourcing & Procurement') }}</h3>
@@ -58,7 +58,7 @@
 
             <div class="col-lg-4">
                <div class="service-card2 round bg-info fadeInUp" data-delay=".4">
-                  <div class="serv-thumb" style="background-image: url('{{ asset('client/assets/images/2148327823.jpg') }}'); background-size: cover; background-position: center;">
+                  <div class="serv-thumb" style="background-image: url('{{ asset('client/assets/images/herbs/2.jpg') }}'); background-size: cover; background-position: center;">
                      <span class="icon round-2"><img src="{{ asset('client/assets/images/icons/serv2_green.png') }}" alt=""></span>
                   </div>
                   <h3 class="display-4">{{ _('Drying & Processing') }}</h3>
@@ -71,7 +71,7 @@
 
             <div class="col-lg-4">
                <div class="service-card2 round bg-info fadeInUp" data-delay=".6">
-                  <div class="serv-thumb" style="background-image: url('{{ asset('client/assets/images/2148923181.jpg') }}'); background-size: cover; background-position: center;">
+                  <div class="serv-thumb" style="background-image: url('{{ asset('client/assets/images/herbs/3.jpg') }}'); background-size: cover; background-position: center;">
                      <span class="icon round-2"><img src="{{ asset('client/assets/images/icons/serv3_green.png') }}" alt=""></span>
                   </div>
                   <h3 class="display-4">{{ _('Cleaning & Sorting') }}</h3>
@@ -84,7 +84,7 @@
 
             <div class="col-lg-4">
                <div class="service-card2 round bg-info fadeInUp" data-delay=".8">
-                  <div class="serv-thumb" style="background-image: url('{{ asset('client/assets/images/19103.jpg') }}'); background-size: cover; background-position: center;">
+                  <div class="serv-thumb" style="background-image: url('{{ asset('client/assets/images/herbs/4.jpg') }}'); background-size: cover; background-position: center;">
                      <span class="icon round-2"><img src="{{ asset('client/assets/images/icons/serv4_green.png') }}" alt=""></span>
                   </div>
                   <h3 class="display-4">{{ _('Packaging') }}</h3>
@@ -97,7 +97,7 @@
 
             <div class="col-lg-4">
                <div class="service-card2 round bg-info fadeInUp" data-delay="1">
-                  <div class="serv-thumb" style="background-image: url('{{ asset('client/assets/images/Warehousing.jpg') }}'); background-size: cover; background-position: center;">
+                  <div class="serv-thumb" style="background-image: url('{{ asset('client/assets/images/herbs/9.jpg') }}'); background-size: cover; background-position: center;">
                      <span class="icon round-2"><img src="{{ asset('client/assets/images/icons/serv1_green.png') }}" alt=""></span>
                   </div>
                   <h3 class="display-4">{{ _('Quality Control') }}</h3>
@@ -110,7 +110,7 @@
 
             <div class="col-lg-4">
                <div class="service-card2 round bg-info fadeInUp" data-delay="1.2">
-                  <div class="serv-thumb" style="background-image: url('{{ asset('client/assets/images/about-ft.jpg') }}'); background-size: cover; background-position: center;">
+                  <div class="serv-thumb" style="background-image: url('{{ asset('client/assets/images/herbs/10.jpg') }}'); background-size: cover; background-position: center;">
                      <span class="icon round-2"><img src="{{ asset('client/assets/images/icons/serv2_green.png') }}" alt=""></span>
                   </div>
                   <h3 class="display-4">{{ _('Export & Logistics') }}</h3>
@@ -128,7 +128,7 @@
 
    <!-- Why Choose Section Start -->
    <section class="why-us3 sec-padding jarallax" data-jarallax data-speed=".4">
-      <img src="{{ asset('client/assets/images/whu-us-bg.jpg') }}" class="jarallax-img" alt="">
+      <img src="{{ asset('client/assets/images/herbs/11.jpg') }}" class="jarallax-img" alt="">
       <img src="{{ asset('client/assets/images/slide-anim_green.png') }}" class="abs-img bottom-0" alt="">
       <div class="container">
          <div class="row">
@@ -305,3 +305,4 @@
 </body>
 
 </html>
+

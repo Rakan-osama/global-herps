@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 @include('client.main.html')
 
 <head>
@@ -12,7 +12,7 @@
 
    <!-- Hero Section Start -->
    <section class="promo-sec bg-cover jarallax" data-jarallax data-speed=".4">
-      <img src="{{ asset('client/assets/images/41361.jpg') }}" alt="" class="jarallax-img">
+      <img src="{{ asset('client/assets/images/herbs/6.jpg') }}" alt="" class="jarallax-img">
       <div class="parallax-overly"></div>
       <div class="container">
          <div class="row">
@@ -112,7 +112,7 @@
             <div class="col-xl-5 col-lg-7 mx-lg-auto">
                <div class="about-media3 position-relative">
                   <div class="feat-img position-relative mb-5">
-                     <img src="{{ asset('client/assets/images/19103.jpg') }}" class="img-fluid round" alt="about">
+                     <img src="{{ asset('client/assets/images/herbs/7.jpg') }}" class="img-fluid round" alt="about">
                      <div class="experien-stat">
                         <p class="text-info m-0"><span class="purecounter" data-purecounter-end="10" data-purecounter-duration="0">10</span>+ {{ _('Years Experience') }}</p>
                      </div>
@@ -144,19 +144,19 @@
                      <div class="tab-pane fade show active" id="mission" role="tabpanel">
                         <div class="d-sm-flex gap-4 mb-3">
                            <div class="tab-img">
-                              <img src="{{ asset('client/assets/images/2148923173.jpg') }}" class="img-fluid rounded-4" alt="mission">
+                              <img src="{{ asset('client/assets/images/herbs/1.jpg') }}" class="img-fluid rounded-4" alt="mission">
                            </div>
                            <div class="tab-txt">
                               <p>{{ _('To supply safe, high-quality Egyptian herbs, spices and seeds that consistently meet the specifications of international importers, tea packers and spice brands.') }}</p>
                               <p>{{ _('We focus on natural products grown under the Egyptian sun and processed with modern technology to preserve the character that makes them sought after worldwide.') }}</p>
                            </div>
                         </div>
-                        <h6>{{ _('Consistent quality from field to shipment — that is the Global Herbs promise.') }}</h6>
+                        <h6>{{ _('Consistent quality from field to shipment that is the Global Herbs promise.') }}</h6>
                      </div>
                      <div class="tab-pane fade" id="vision" role="tabpanel">
                         <div class="d-sm-flex gap-4 mb-3">
                            <div class="tab-img">
-                              <img src="{{ asset('client/assets/images/2148327823.jpg') }}" class="img-fluid rounded-4" alt="vision">
+                              <img src="{{ asset('client/assets/images/herbs/2.jpg') }}" class="img-fluid rounded-4" alt="vision">
                            </div>
                            <div class="tab-txt">
                               <p>{{ _('To become the most trusted Egyptian exporter of premium herbs and spices, recognised globally for product integrity, reliable supply and long-term partnership.') }}</p>
@@ -168,14 +168,14 @@
                      <div class="tab-pane fade" id="values" role="tabpanel">
                         <div class="d-sm-flex gap-4 mb-3">
                            <div class="tab-img">
-                              <img src="{{ asset('client/assets/images/2148923181.jpg') }}" class="img-fluid rounded-4" alt="values">
+                              <img src="{{ asset('client/assets/images/herbs/3.jpg') }}" class="img-fluid rounded-4" alt="values">
                            </div>
                            <div class="tab-txt">
                               <p>{{ _('Quality starts in the field and continues through every processing step. We operate on values of excellence, transparency and commitment to specifications.') }}</p>
-                              <p>{{ _('We respect our farmers, our clients, and our products. Every batch we ship carries the reputation of Egyptian herbs — we take that seriously.') }}</p>
+                              <p>{{ _('We respect our farmers, our clients, and our products. Every batch we ship carries the reputation of Egyptian herbs we take that seriously.') }}</p>
                            </div>
                         </div>
-                        <h6>{{ _('Excellence, transparency, and long-term partnership — the Global Herbs way.') }}</h6>
+                        <h6>{{ _('Excellence, transparency, and long-term partnership the Global Herbs way.') }}</h6>
                      </div>
                   </div>
 
@@ -207,9 +207,9 @@
                <h2 class="text-info">{{ _('Premium Egyptian Herbs, Spices & Seeds for Global Markets') }}</h2>
                @php
                $productTabs = [
-                  ['id' => 'mint',      'nav_title' => 'Egyptian Mint',  'nav_desc' => 'High oil content, deep colour, low stem and dust — the crop Global Herbs is built on.',      'image' => '2148923173.jpg', 'card_title' => 'Egyptian Mint',  'card_desc' => 'Field-selected mint from prime Egyptian regions, designed for premium tea and herbal infusion brands.'],
-                  ['id' => 'chamomile', 'nav_title' => 'Chamomile',      'nav_desc' => 'High volatile oil, uniform flower size, low moisture — for tea and pharmaceutical markets.', 'image' => '2148327823.jpg', 'card_title' => 'Chamomile',      'card_desc' => 'Harvested and dried under controlled conditions to meet the strict requirements of international buyers.'],
-                  ['id' => 'seeds',     'nav_title' => 'Spices & Seeds', 'nav_desc' => 'Anise, Fenugreek, Coriander — carefully sorted and cleaned for spice blenders worldwide.',  'image' => '2148923181.jpg', 'card_title' => 'Spices & Seeds', 'card_desc' => 'Export-grade anise seeds, fenugreek and coriander with consistent size, colour and low impurity levels.'],
+                  ['id' => 'mint',      'nav_title' => 'Egyptian Mint',  'nav_desc' => 'High oil content, deep colour, low stem and dust the crop Global Herbs is built on.',      'image' => 'herbs/1.jpg', 'card_title' => 'Egyptian Mint',  'card_desc' => 'Field-selected mint from prime Egyptian regions, designed for premium tea and herbal infusion brands.'],
+                  ['id' => 'chamomile', 'nav_title' => 'Chamomile',      'nav_desc' => 'High volatile oil, uniform flower size, low moisture for tea and pharmaceutical markets.', 'image' => 'herbs/2.jpg', 'card_title' => 'Chamomile',      'card_desc' => 'Harvested and dried under controlled conditions to meet the strict requirements of international buyers.'],
+                  ['id' => 'seeds',     'nav_title' => 'Spices & Seeds', 'nav_desc' => 'Anise, Fenugreek, Coriander carefully sorted and cleaned for spice blenders worldwide.',  'image' => 'herbs/3.jpg', 'card_title' => 'Spices & Seeds', 'card_desc' => 'Export-grade anise seeds, fenugreek and coriander with consistent size, colour and low impurity levels.'],
                ];
                @endphp
                <div class="ct-tab nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
@@ -259,3 +259,4 @@
 </body>
 
 </html>
+

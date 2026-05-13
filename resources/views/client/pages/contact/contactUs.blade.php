@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 @include('client.main.html')
 
 <head>
@@ -13,7 +13,7 @@
 
    <!-- Hero Section Start -->
    <section class="promo-sec bg-cover jarallax" data-jarallax data-speed=".4">
-      <img src="{{ asset('client/assets/images/10475.jpg') }}" alt="" class="jarallax-img img-fluid">
+      <img src="{{ asset('client/assets/images/herbs/6.jpg') }}" alt="" class="jarallax-img img-fluid">
       <div class="parallax-overly"></div>
       <div class="container">
          <div class="row">
@@ -161,3 +161,4 @@
 </body>
 
 </html>
+

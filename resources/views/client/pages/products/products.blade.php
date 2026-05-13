@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 @include('client.main.html')
 
 <head>
@@ -13,7 +13,7 @@
 
    <!-- Hero Section Start -->
    <section class="promo-sec bg-cover jarallax" data-jarallax data-speed=".4">
-      <img src="{{ asset('client/assets/images/2148923173.jpg') }}" alt="" class="jarallax-img img-fluid">
+      <img src="{{ asset('client/assets/images/herbs/1.jpg') }}" alt="" class="jarallax-img img-fluid">
       <div class="parallax-overly"></div>
       <div class="container">
          <div class="row">
@@ -49,7 +49,7 @@
             <!-- Egyptian Mint -->
             <div class="col-lg-4 col-md-6">
                <div class="service-card2 round bg-info fadeInUp" data-delay=".2">
-                  <div class="serv-thumb" style="background-image: url('{{ asset('client/assets/images/2148923173.jpg') }}'); background-size: cover; background-position: center; height: 220px;">
+                  <div class="serv-thumb" style="background-image: url('{{ asset('client/assets/images/herbs/1.jpg') }}'); background-size: cover; background-position: center; height: 220px;">
                      <span class="icon round-2">
                         <img src="{{ asset('client/assets/images/icons/serv1_green.png') }}" alt="">
                      </span>
@@ -73,7 +73,7 @@
             <!-- Chamomile -->
             <div class="col-lg-4 col-md-6">
                <div class="service-card2 round bg-info fadeInUp" data-delay=".4">
-                  <div class="serv-thumb" style="background-image: url('{{ asset('client/assets/images/2148327823.jpg') }}'); background-size: cover; background-position: center; height: 220px;">
+                  <div class="serv-thumb" style="background-image: url('{{ asset('client/assets/images/herbs/2.jpg') }}'); background-size: cover; background-position: center; height: 220px;">
                      <span class="icon round-2">
                         <img src="{{ asset('client/assets/images/icons/serv2_green.png') }}" alt="">
                      </span>
@@ -97,7 +97,7 @@
             <!-- Anise Seeds -->
             <div class="col-lg-4 col-md-6">
                <div class="service-card2 round bg-info fadeInUp" data-delay=".6">
-                  <div class="serv-thumb" style="background-image: url('{{ asset('client/assets/images/2148923181.jpg') }}'); background-size: cover; background-position: center; height: 220px;">
+                  <div class="serv-thumb" style="background-image: url('{{ asset('client/assets/images/herbs/3.jpg') }}'); background-size: cover; background-position: center; height: 220px;">
                      <span class="icon round-2">
                         <img src="{{ asset('client/assets/images/icons/serv3_green.png') }}" alt="">
                      </span>
@@ -121,7 +121,7 @@
             <!-- Fenugreek -->
             <div class="col-lg-4 col-md-6">
                <div class="service-card2 round bg-info fadeInUp" data-delay=".8">
-                  <div class="serv-thumb" style="background-image: url('{{ asset('client/assets/images/19103.jpg') }}'); background-size: cover; background-position: center; height: 220px;">
+                  <div class="serv-thumb" style="background-image: url('{{ asset('client/assets/images/herbs/4.jpg') }}'); background-size: cover; background-position: center; height: 220px;">
                      <span class="icon round-2">
                         <img src="{{ asset('client/assets/images/icons/serv4_green.png') }}" alt="">
                      </span>
@@ -145,7 +145,7 @@
             <!-- Coriander -->
             <div class="col-lg-4 col-md-6">
                <div class="service-card2 round bg-info fadeInUp" data-delay="1">
-                  <div class="serv-thumb" style="background-image: url('{{ asset('client/assets/images/19315.jpg') }}'); background-size: cover; background-position: center; height: 220px;">
+                  <div class="serv-thumb" style="background-image: url('{{ asset('client/assets/images/herbs/5.jpg') }}'); background-size: cover; background-position: center; height: 220px;">
                      <span class="icon round-2">
                         <img src="{{ asset('client/assets/images/icons/serv1_green.png') }}" alt="">
                      </span>
@@ -183,7 +183,7 @@
    <!-- Products Intro End -->
 
    <!-- Quality Stats Start -->
-   <section class="stat-sec" style="background-image: url('{{ asset('client/assets/images/stat-bg.jpg') }}');">
+   <section class="stat-sec" style="background-image: url('{{ asset('client/assets/images/herbs/11.jpg') }}');">
       <div class="container">
          <div class="row">
             <div class="col-lg-3 col-md-6">
@@ -234,3 +234,4 @@
 </body>
 
 </html>
+
