@@ -1,6 +1,5 @@
 ﻿<section class="slider-section position-relative">
       <img src="{{ asset('client/assets/images/slide-sh1.png') }}" alt="" class="abs-img top-0" aria-hidden="true">
-      <img src="{{ asset('client/assets/images/tranck-v.png') }}" alt="Truck delivery illustration" class="anim-img moveXS bottom-0">
 
       <div class="container-fluid p-0">
          <div class="row g-0 align-items-center">
@@ -12,11 +11,11 @@
                         <img src="{{ asset('client/assets/images/icons/boomark.png') }}" alt="Bookmark icon">
                      </div>
                   </div>
-                  <p class="sub-title h4">{{ _('Global Import & Export') }}</p>
-                  <h1 class="text-info fw-bold">{{ _('Your Gateway to International Trade') }}</h1>
+                  <p class="sub-title h4">{{ _('Egyptian Herbs, Spices & Seeds') }}</p>
+                  <h1 class="text-info fw-bold">{{ _('Premium Quality. Reliable Export.') }}</h1>
 
                   <div class="slide-meta">
-                     <p class="h6 text-info">{{ _('Connecting businesses worldwide with seamless import and export solutions for sustainable growth.') }}</p>
+                     <p class="h6 text-info">{{ _('An Egyptian company dedicated to herbs, spices and seeds — grown under our sun, processed with modern technology, and shipped to partners who expect consistent export quality.') }}</p>
                      <a href="{{ route('client.contact') }}" class="btn btn-primary">{{ _("Let's Get Started") }} <i class="fa fa-arrow-right"
                            aria-hidden="true"></i></a>
                   </div>
@@ -29,12 +28,12 @@
                      <div class="swiper-wrapper">
                         <div class="swiper-slide">
                            <div class="slide-img">
-                              <img src="{{ asset('client/assets/images/slide-m1.jpg') }}" alt=" warehouse management">
+                              <img src="{{ asset('client/assets/images/slide-m1.jpg') }}" alt="Egyptian herbs field">
                            </div>
                         </div>
                         <div class="swiper-slide">
                            <div class="slide-img">
-                              <img src="{{ asset('client/assets/images/slide-m2.jpg') }}" alt="Global shipping transport">
+                              <img src="{{ asset('client/assets/images/slide-m2.jpg') }}" alt="Herbs processing and packaging">
                            </div>
                         </div>
                      </div>
@@ -48,9 +47,9 @@
                         <img src="{{ asset('client/assets/images/cl4.png') }}" alt="Client logo">
                      </div>
                      <div class="stat-info">
-                        <span class="display-5 purecounter text-primary" data-purecounter-end="2800000"
+                        <span class="display-5 purecounter text-primary" data-purecounter-end="120000"
                            data-purecounter-currency=" "></span>
-                        <h2 class="h5">{{ _('Shipments Delivered') }}</h2>
+                        <h2 class="h5">{{ _('Tons Exported') }}</h2>
                      </div>
                   </div>
                </div>

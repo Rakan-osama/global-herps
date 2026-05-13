@@ -2,11 +2,11 @@
    <meta http-equiv="x-ua-compatible" content="ie=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
    <meta name="description"
-      content="Green Harvest is an Egyptian export company specialized in fresh and frozen agricultural products. We connect high-quality Egyptian produce with global markets, offering premium citrus, vegetables, and fruits.">
+      content="Global Herbs is an Egyptian company specialized in growing, processing and exporting premium mint, herbs, spices and seeds to international markets with consistent quality and reliable service.">
    <meta name="keywords"
-      content="green harvest, egyptian export, agricultural products, fresh produce, frozen vegetables, citrus export, egyptian fruits, farm to export, international trade, food export company">
-   <meta name="author" content="Green Harvest">
-   <title> Green Harvest </title>
+      content="global herbs, egyptian herbs, egyptian mint, chamomile export, anise seeds, fenugreek export, coriander seeds, herbs export egypt, spices export, dried herbs egypt, tea herbs, herb supplier egypt">
+   <meta name="author" content="Global Herbs">
+   <title>Global Herbs</title>
    <link rel="apple-touch-icon" href="{{ asset('client/assets/images/favicon-green.png') }}">
    <link rel="shortcut icon" href="{{ asset('client/assets/images/favicon-green.png') }}">
    <!-- Google Fonts -->
