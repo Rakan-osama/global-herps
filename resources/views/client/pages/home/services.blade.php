@@ -1,4 +1,4 @@
-﻿<!-- Products Section Start -->
+<!-- Products Section Start -->
 <section class="services-sec overflow-hidden position-relative bg-shade sec-padding">
   <div class="container position-relative">
     <div class="d-sm-flex align-items-center justify-content-between">

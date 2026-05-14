@@ -1,4 +1,4 @@
-﻿   @if(!isset($portfolioHeader) || $portfolioHeader?->is_active !== false)
+   @if(!isset($portfolioHeader) || $portfolioHeader?->is_active !== false)
    <!-- Portfolio Section Start -->
    <section class="portfolio-sec sec-padding overflow-hidden">
       <div class="container">

@@ -1,4 +1,4 @@
-﻿@php $formC = $formC ?? null; @endphp
+@php $formC = $formC ?? null; @endphp
 <!-- Contact Form Intro Section Start -->
 <section class="sec-padding">
    <div class="container">

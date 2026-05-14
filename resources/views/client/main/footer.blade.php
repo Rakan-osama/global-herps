@@ -1,4 +1,4 @@
-﻿<!-- Footer Start -->
+<!-- Footer Start -->
    <footer class="footer bg-cover jarallax" data-jarallax data-speed=".2">
       <img src="{{ asset('client/assets/images/footer-bg.jpg') }}" alt="" class="jarallax-img">
       <div class="parallax-overly"></div>

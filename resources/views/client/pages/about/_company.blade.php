@@ -1,4 +1,4 @@
-﻿@php
+@php
    $company = $company ?? null;
    $tabs = $company->additional_features ?? [
       ['tab_title' => 'Our Mission', 'id' => 'mission', 'image' => '2148173915.jpg', 'text_1' => 'Green Harvest is an Egyptian export company specialized in fresh and frozen agricultural products.', 'text_2' => 'We focus on connecting high-quality Egyptian produce with global markets.', 'summary' => "Green Harvest's mission is to supply safe, high-quality agricultural products that meet global market demands and strengthen trust in Egyptian produce."],

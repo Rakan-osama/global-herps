@@ -1,4 +1,4 @@
-﻿@php
+@php
    $whyS = $whyS ?? null;
    $whyPhone = $whyS->additional_features['phone'] ?? '+148 359 505 285';
    $progressBars = $whyS->additional_features['progress_bars'] ?? [

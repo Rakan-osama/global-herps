@@ -1,4 +1,4 @@
-﻿@php $hero = $hero ?? null; @endphp
+@php $hero = $hero ?? null; @endphp
 <!-- Promo Section Start -->
 <section class="promo-sec bg-cover jarallax" data-jarallax data-speed=".4">
    <img src="{{ $hero?->getFirstMediaUrl('hero_background') ?: asset('client/assets/images/41361.jpg') }}" alt="" class="jarallax-img">

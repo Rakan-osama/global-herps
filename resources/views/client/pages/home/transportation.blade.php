@@ -1,4 +1,4 @@
-﻿<!-- Stats Section Start -->
+<!-- Stats Section Start -->
 <section class="stat-sec" style="background-image: url('{{ asset('client/assets/images/stat-bg.jpg') }}');">
    <div class="container">
       <div class="row">

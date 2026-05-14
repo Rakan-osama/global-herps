@@ -1,4 +1,4 @@
-﻿@php
+@php
    $faq = $faq ?? null;
    $faqItems = $faq->additional_features ?? [
       ['question' => 'What products does Green Harvest offer?', 'answer' => 'Green Harvest offers a wide range of agricultural products including fresh fruits, fresh vegetables, frozen fruits, frozen vegetables, and citrus fruits. All products are prepared according to the export specifications of each target market.'],

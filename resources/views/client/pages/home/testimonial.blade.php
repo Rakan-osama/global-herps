@@ -1,4 +1,4 @@
-﻿<!-- Testimonial Section Start -->
+<!-- Testimonial Section Start -->
 <section class="review-sec sec-padding position-relative overflow-hidden">
    <div class="container">
       <div class="row">

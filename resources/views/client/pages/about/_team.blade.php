@@ -1,4 +1,4 @@
-﻿@php
+@php
    $team = $team ?? null;
    $teamMembers = $team->additional_features ?? [
       ['name' => 'Jenny Noah', 'role' => 'Quality Control Manager', 'image' => 'tm1.jpg'],

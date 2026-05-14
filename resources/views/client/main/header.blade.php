@@ -1,4 +1,4 @@
-﻿  <!-- Canvas Menu Start -->
+  <!-- Canvas Menu Start -->
   <div class="canvas-menu d-flex flex-column">
       <div class="d-flex justify-content-between w-100 mb-4">
          <!-- Logo Here -->
@@ -65,13 +65,6 @@
     <div class="header-top">
       <div class="container ct-container">
         <div class="d-flex justify-content-between align-items-center">
-          <div class="header-infos">
-            <ul class="d-none d-xl-flex flex-wrap align-items-center gap-4">
-              <!-- your top infos unchanged -->
-              
-            </ul>
-          </div>
-
           <div class="header-cta d-flex align-items-center gap-3">
             <div class="social-share ms-4">
               @foreach($site['social_links'] ?? [] as $social)

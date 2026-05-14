@@ -1,4 +1,4 @@
-﻿@php
+@php
    $intro = $intro ?? null;
    $stats = $intro->additional_features ?? [
       ['title' => 'Years Of Excellence', 'counter' => 25, 'icon' => 'icons/time.svg', 'description' => 'Quality agricultural exports'],

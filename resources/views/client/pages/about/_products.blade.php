@@ -1,4 +1,4 @@
-﻿@php
+@php
    $prods = $prods ?? null;
    $productTabs = $prods->additional_features ?? [
       ['id' => 'air', 'nav_title' => 'Fresh Produce', 'nav_desc' => 'Premium quality fresh fruits and vegetables sourced from fertile Egyptian lands.', 'image' => 'tab-main1.jpg', 'card_title' => 'Fresh Fruits', 'card_desc' => 'Premium quality fresh fruits prepared for export markets'],

@@ -1,4 +1,4 @@
-﻿<section class="slider-section position-relative">
+<section class="slider-section position-relative">
       <img src="{{ asset('client/assets/images/slide-sh1.png') }}" alt="" class="abs-img top-0" aria-hidden="true">
 
       <div class="container-fluid p-0">

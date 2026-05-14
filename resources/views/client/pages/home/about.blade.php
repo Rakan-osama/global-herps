@@ -1,4 +1,4 @@
-﻿<section class="about-section position-relative sec-padding">
+<section class="about-section position-relative sec-padding">
    <img src="{{ asset('client/assets/images/about-sh.png') }}" alt="shape" class="anim-img moveY">
    <div class="container">
       <div class="row">

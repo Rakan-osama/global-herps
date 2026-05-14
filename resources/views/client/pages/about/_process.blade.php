@@ -1,4 +1,4 @@
-﻿@php
+@php
    $process = $process ?? null;
    $processCards = $process->additional_features ?? [
       ['title' => 'Cultivation & Selection', 'description' => 'Cultivation and monitoring of crops, followed by careful selection and sorting', 'image' => 'st1.png'],

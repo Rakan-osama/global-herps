@@ -1,4 +1,4 @@
-﻿<!-- Slider Section Start -->
+<!-- Slider Section Start -->
 <section class="slider-sec2 position-relative">
    <a href="{{ route('client.products') }}" class="slide-cta">{{ _('Discover Our Products') }}</a>
    <div class="hero-slider2 swiper">

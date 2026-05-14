@@ -1,4 +1,4 @@
-﻿@if(!isset($blogsHeader) || $blogsHeader?->is_active !== false)
+@if(!isset($blogsHeader) || $blogsHeader?->is_active !== false)
    <!-- Blog Section Start -->
    <section class="blog-sec sec-padding">
       <div class="container">
