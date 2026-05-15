@@ -26,7 +26,7 @@
                   <h3 class="display-4 m-0"><a href="{{ route('client.products') }}">{{ __('Egyptian Mint') }}</a></h3>
                 </div>
                 <div class="service-thumb">
-                  <img class="img-fluid" src="{{ asset('client/assets/images/herbs/1.jpg') }}" alt="">
+                  <img class="img-fluid" src="{{ asset('client/assets/images/herbs_images/spearmint.jpg') }}" alt="">
                 </div>
                 <p>{{ __('Deep green leaves, high oil content and a sharp, clean aroma. Field-selected mint from prime Egyptian regions, gently dried to preserve maximum essential oils.') }}</p>
                 <div class="service-footer border-top">
@@ -44,7 +44,7 @@
                   <h3 class="display-4 m-0"><a href="{{ route('client.products') }}">{{ __('Chamomile') }}</a></h3>
                 </div>
                 <div class="service-thumb">
-                  <img class="img-fluid" src="{{ asset('client/assets/images/herbs/2.jpg') }}" alt="">
+                  <img class="img-fluid" src="{{ asset('client/assets/images/herbs_images/chamomile.jpg') }}" alt="">
                 </div>
                 <p>{{ __('Premium Egyptian chamomile flowers with high volatile oil content, bright colour and characteristic aroma. Meets strict requirements of herbal tea and pharmaceutical markets.') }}</p>
                 <div class="service-footer border-top">
@@ -62,7 +62,7 @@
                   <h3 class="display-4 m-0"><a href="{{ route('client.products') }}">{{ __('Anise Seeds') }}</a></h3>
                 </div>
                 <div class="service-thumb">
-                  <img class="img-fluid" src="{{ asset('client/assets/images/herbs/3.jpg') }}" alt="">
+                  <img class="img-fluid" src="{{ asset('client/assets/images/seeds/anise_seeds.jpg') }}" alt="">
                 </div>
                 <p>{{ __('Egyptian anise seeds with rich aroma and high anethole content. Carefully cleaned, sorted and dried to export-grade specifications for spice blenders and food manufacturers worldwide.') }}</p>
                 <div class="service-footer border-top">
@@ -80,7 +80,7 @@
                   <h3 class="display-4 m-0"><a href="{{ route('client.products') }}">{{ __('Fenugreek') }}</a></h3>
                 </div>
                 <div class="service-thumb">
-                  <img class="img-fluid" src="{{ asset('client/assets/images/herbs/4.jpg') }}" alt="">
+                  <img class="img-fluid" src="{{ asset('client/assets/images/seeds/fenugreek.jpg') }}" alt="">
                 </div>
                 <p>{{ __('High-quality Egyptian fenugreek seeds with consistent size, colour and low impurity levels. Trusted by spice brands, health supplement producers and food manufacturers.') }}</p>
                 <div class="service-footer border-top">
@@ -98,7 +98,7 @@
                   <h3 class="display-4 m-0"><a href="{{ route('client.products') }}">{{ __('Coriander') }}</a></h3>
                 </div>
                 <div class="service-thumb">
-                  <img class="img-fluid" src="{{ asset('client/assets/images/herbs/5.jpg') }}" alt="">
+                  <img class="img-fluid" src="{{ asset('client/assets/images/seeds/coriander.jpg') }}" alt="">
                 </div>
                 <p>{{ __('Egyptian coriander seeds prized for their balanced lemon-spice aroma and high oil yield. Supplied whole or split to spice blenders and food manufacturers year-round.') }}</p>
                 <div class="service-footer border-top">

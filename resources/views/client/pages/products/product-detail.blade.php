@@ -14,7 +14,7 @@
     <!-- Hero Banner -->
     <section class="pd-hero">
         <div class="pd-hero-img">
-            <img src="{{ asset('client/assets/images/herbs/' . $product['image']) }}" alt="{{ $product['name'] }}">
+            <img src="{{ asset('client/assets/images/' . $product['image']) }}" alt="{{ $product['name'] }}">
         </div>
         <div class="pd-hero-overlay"></div>
         <div class="container h-100">
@@ -93,7 +93,7 @@
 
                     <!-- Product Image Card -->
                     <div class="pd-img-card">
-                        <img src="{{ asset('client/assets/images/herbs/' . $product['image']) }}" alt="{{ $product['name'] }}">
+                        <img src="{{ asset('client/assets/images/' . $product['image']) }}" alt="{{ $product['name'] }}">
                     </div>
 
                     <!-- Specifications -->
@@ -130,7 +130,7 @@
                     <!-- CTA Card -->
                     <div class="pd-cta-card">
                         <h4>{{ __('Request a Quote') }}</h4>
-                        <p>{{ __('Ready to source') }} <strong>{{ __($product['name']) }}</strong>? {{ _('Contact our export team for specifications, pricing and samples.') }}</p>
+                        <p>{{ __('Ready to source') }} <strong>{{ __($product['name']) }}</strong>? {{ __('Contact our export team for specifications, pricing and samples.') }}</p>
                         <a href="{{ route('client.contact') }}" class="btn pd-cta-btn w-100">
                             {{ __('Get a Quote') }} <i class="fa fa-arrow-right ms-2"></i>
                         </a>

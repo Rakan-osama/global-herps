@@ -71,7 +71,7 @@
                     <div class="col-lg-3 col-md-4 col-sm-6">
                         <a href="{{ route('client.product', $product['slug']) }}" class="prod-card">
                             <div class="prod-card-img">
-                                <img src="{{ asset('client/assets/images/herbs/' . $product['image']) }}" alt="{{ $product['name'] }}">
+                                <img src="{{ asset('client/assets/images/' . $product['image']) }}" alt="{{ $product['name'] }}">
                                 <span class="prod-category-badge">{{ __('Seed') }}</span>
                             </div>
                             <div class="prod-card-body">
@@ -92,7 +92,7 @@
                     <div class="col-lg-3 col-md-4 col-sm-6">
                         <a href="{{ route('client.product', $product['slug']) }}" class="prod-card">
                             <div class="prod-card-img">
-                                <img src="{{ asset('client/assets/images/herbs/' . $product['image']) }}" alt="{{ $product['name'] }}">
+                                <img src="{{ asset('client/assets/images/' . $product['image']) }}" alt="{{ $product['name'] }}">
                                 <span class="prod-category-badge herbs">{{ __('Herb') }}</span>
                             </div>
                             <div class="prod-card-body">
@@ -113,7 +113,7 @@
                     <div class="col-lg-3 col-md-4 col-sm-6">
                         <a href="{{ route('client.product', $product['slug']) }}" class="prod-card">
                             <div class="prod-card-img">
-                                <img src="{{ asset('client/assets/images/herbs/' . $product['image']) }}" alt="{{ $product['name'] }}">
+                                <img src="{{ asset('client/assets/images/' . $product['image']) }}" alt="{{ $product['name'] }}">
                                 <span class="prod-category-badge spices">{{ __('Spice') }}</span>
                             </div>
                             <div class="prod-card-body">

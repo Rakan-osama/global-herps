@@ -13,7 +13,7 @@
 
    <!-- Hero Section Start -->
    <section class="promo-sec bg-cover jarallax" data-jarallax data-speed=".4">
-      <img src="{{ asset('client/assets/images/herbs/1.jpg') }}" alt="" class="jarallax-img img-fluid">
+      <img src="{{ asset('client/assets/images/herbs_images/spearmint.jpg') }}" alt="" class="jarallax-img img-fluid">
       <div class="parallax-overly"></div>
       <div class="container">
          <div class="row">
@@ -45,8 +45,8 @@
 
             <div class="col-lg-4">
                <div class="service-card2 round bg-info fadeInUp" data-delay=".2">
-                  <div class="serv-thumb" style="background-image: url('{{ asset('client/assets/images/herbs/1.jpg') }}'); background-size: cover; background-position: center;">
-                     <span class="icon round-2"><img src="{{ asset('client/assets/images/icons/serv1_green.png') }}" alt=""></span>
+                  <div class="serv-thumb">
+                     <img src="{{ asset('client/assets/images/herbs_images/thyme.jpg') }}" alt="{{ __('Sourcing & Procurement') }}">
                   </div>
                   <h3 class="display-4">{{ __('Sourcing & Procurement') }}</h3>
                   <p>{{ __('We work directly with experienced Egyptian growers. Our agronomists visit farms before harvest to assess crop quality, ensuring only the best raw material enters our processing line.') }}</p>
@@ -58,8 +58,8 @@
 
             <div class="col-lg-4">
                <div class="service-card2 round bg-info fadeInUp" data-delay=".4">
-                  <div class="serv-thumb" style="background-image: url('{{ asset('client/assets/images/herbs/2.jpg') }}'); background-size: cover; background-position: center;">
-                     <span class="icon round-2"><img src="{{ asset('client/assets/images/icons/serv2_green.png') }}" alt=""></span>
+                  <div class="serv-thumb">
+                     <img src="{{ asset('client/assets/images/herbs_images/chamomile.jpg') }}" alt="{{ __('Drying & Processing') }}">
                   </div>
                   <h3 class="display-4">{{ __('Drying & Processing') }}</h3>
                   <p>{{ __('Controlled drying at optimal temperature and airflow preserves essential oils, colour and aroma. We use modern drying technology tailored to each herb to protect its active character.') }}</p>
@@ -71,8 +71,8 @@
 
             <div class="col-lg-4">
                <div class="service-card2 round bg-info fadeInUp" data-delay=".6">
-                  <div class="serv-thumb" style="background-image: url('{{ asset('client/assets/images/herbs/3.jpg') }}'); background-size: cover; background-position: center;">
-                     <span class="icon round-2"><img src="{{ asset('client/assets/images/icons/serv3_green.png') }}" alt=""></span>
+                  <div class="serv-thumb">
+                     <img src="{{ asset('client/assets/images/seeds/anise_seeds.jpg') }}" alt="{{ __('Cleaning & Sorting') }}">
                   </div>
                   <h3 class="display-4">{{ __('Cleaning & Sorting') }}</h3>
                   <p>{{ __('Multi-step mechanical and manual cleaning removes stems, dust and foreign matter. Products are sieved, graded and finished to meet the specifications of each buyer.') }}</p>
@@ -84,8 +84,8 @@
 
             <div class="col-lg-4">
                <div class="service-card2 round bg-info fadeInUp" data-delay=".8">
-                  <div class="serv-thumb" style="background-image: url('{{ asset('client/assets/images/herbs/4.jpg') }}'); background-size: cover; background-position: center;">
-                     <span class="icon round-2"><img src="{{ asset('client/assets/images/icons/serv4_green.png') }}" alt=""></span>
+                  <div class="serv-thumb">
+                     <img src="{{ asset('client/assets/images/seeds/sesame.jpg') }}" alt="{{ __('Packaging') }}">
                   </div>
                   <h3 class="display-4">{{ __('Packaging') }}</h3>
                   <p>{{ __('Export-grade packaging in cartons, sacks, or vacuum-sealed bags depending on product and destination. We accommodate private-label and custom packaging requirements.') }}</p>
@@ -97,8 +97,8 @@
 
             <div class="col-lg-4">
                <div class="service-card2 round bg-info fadeInUp" data-delay="1">
-                  <div class="serv-thumb" style="background-image: url('{{ asset('client/assets/images/herbs/9.jpg') }}'); background-size: cover; background-position: center;">
-                     <span class="icon round-2"><img src="{{ asset('client/assets/images/icons/serv1_green.png') }}" alt=""></span>
+                  <div class="serv-thumb">
+                     <img src="{{ asset('client/assets/images/herbs_images/hibiscus.jpg') }}" alt="{{ __('Quality Control') }}">
                   </div>
                   <h3 class="display-4">{{ __('Quality Control') }}</h3>
                   <p>{{ __('Every batch is tested for moisture content, essential oil percentage, foreign matter, and microbial compliance before shipment. Full documentation and certificates provided on request.') }}</p>
@@ -110,8 +110,8 @@
 
             <div class="col-lg-4">
                <div class="service-card2 round bg-info fadeInUp" data-delay="1.2">
-                  <div class="serv-thumb" style="background-image: url('{{ asset('client/assets/images/herbs/10.jpg') }}'); background-size: cover; background-position: center;">
-                     <span class="icon round-2"><img src="{{ asset('client/assets/images/icons/serv2_green.png') }}" alt=""></span>
+                  <div class="serv-thumb">
+                     <img src="{{ asset('client/assets/images/spices/turmeric.jpg') }}" alt="{{ __('Export & Logistics') }}">
                   </div>
                   <h3 class="display-4">{{ __('Export & Logistics') }}</h3>
                   <p>{{ __('We handle export documentation, phytosanitary certificates, and coordinate with freight partners for reliable delivery to European, Arab and Asian markets.') }}</p>
@@ -128,7 +128,7 @@
 
    <!-- Why Choose Section Start -->
    <section class="why-us3 sec-padding jarallax" data-jarallax data-speed=".4">
-      <img src="{{ asset('client/assets/images/herbs/11.jpg') }}" class="jarallax-img" alt="">
+      <img src="{{ asset('client/assets/images/herbs_images/moringa.jpg') }}" class="jarallax-img" alt="">
       <img src="{{ asset('client/assets/images/slide-anim_green.png') }}" class="abs-img bottom-0" alt="">
       <div class="container">
          <div class="row">
@@ -141,7 +141,7 @@
                         </svg>
                         {{ __('Why Choose Us') }}</span>
                      <h2 class="text-white">{{ __('Why Choose Global Herbs') }}</h2>
-                     <p>{{ __('Quality starts in the field and continues through every processing step until the product reaches the buyer. We offer complete traceability, consistent specifications, and reliable year-round supply.') }}</p>
+                     <p class="text-white">{{ __('Quality starts in the field and continues through every processing step until the product reaches the buyer. We offer complete traceability, consistent specifications, and reliable year-round supply.') }}</p>
                   </div>
                   <div class="success-stat">
                      <div class="progress">

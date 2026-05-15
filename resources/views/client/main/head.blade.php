@@ -158,4 +158,10 @@
 @media (max-width: 991px) { .pd-hero { height: 380px; } .pd-features-grid, .pd-uses-grid { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 767px) { .pd-hero { height: 320px; } .pd-hero-content { padding-bottom: 32px; } .pd-features-grid { grid-template-columns: 1fr; } .pd-uses-grid { grid-template-columns: 1fr; } .pd-img-card { height: 220px; } }
 @media (max-width: 575px) { .pd-hero { height: 270px; } .pd-hero-title { font-size: 1.7rem; } }
+
+/* ── Services page: card thumb images ────────────── */
+.service-card2 .serv-thumb { height: 220px; }
+.service-card2 .serv-thumb img { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; }
+@media (max-width: 991px) { .service-card2 .serv-thumb { height: 190px; } }
+@media (max-width: 575px) { .service-card2 .serv-thumb { height: 170px; } }
    </style>
