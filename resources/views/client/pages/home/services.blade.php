@@ -117,8 +117,57 @@
 </section>
 <!-- Products Section End -->
 <style>
-.service-card .service-thumb { width: 100%; height: 170px; overflow: hidden; }
-.service-card .service-thumb img { width: 100%; height: 100%; display: block; object-fit: cover; object-position: center; }
-@media (max-width: 575px) { .service-card .service-thumb { height: 160px; } }
+/* Ensure the card mask scales to fit the card at any size */
+.service-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  mask-size: 100% 100% !important;
+}
+
+/* Remove the irregular shape mask from the thumb — use clean rounded corners */
+.service-card .service-thumb {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  border-radius: 12px;
+  flex-shrink: 0;
+  margin: 20px 0 !important;
+  mask-image: none !important;
+}
+
+.service-card .service-thumb img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.5s ease;
+}
+
+.service-card:hover .service-thumb img {
+  transform: scale(1.06);
+}
+
+/* Let description grow so footer stays pinned at the bottom */
+.service-card p {
+  flex-grow: 1;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+@media (max-width: 1199px) {
+  .service-card .service-thumb { height: 200px; }
+}
+@media (max-width: 991px) {
+  .service-card .service-thumb { height: 190px; }
+  .service-card { padding: 22px !important; }
+}
+@media (max-width: 575px) {
+  .service-card .service-thumb { height: 200px; }
+  .service-card { padding: 18px !important; }
+  .service-card .service-head h3 { font-size: 1.2rem !important; }
+  .service-card p { font-size: 13px; }
+}
 </style>
 

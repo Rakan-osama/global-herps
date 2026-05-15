@@ -1,6 +1,5 @@
 <!-- Process Section Start -->
 <section class="process-sec sec-padding position-relative overflow-hidden">
-   <img src="{{ asset('client/assets/images/slide-sh1.png') }}" alt="shape" class="abs-img end-0 top-0">
    <div class="container">
       <div class="sec-intro mx-auto text-center">
          <span class="sub-title fadeInUp">

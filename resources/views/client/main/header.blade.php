@@ -73,7 +73,7 @@
             </div>
             {{-- Language Switcher --}}
             <div class="dropdown ms-3">
-              <button class="btn btn-sm btn-outline-light dropdown-toggle text-white border-white" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 13px; padding: 4px 10px;">
+              <button class="btn btn-sm  dropdown-toggle text-white border-white" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 13px; padding: 4px 10px;">
                 {{ strtoupper(app()->getLocale()) }}
               </button>
               <ul class="dropdown-menu dropdown-menu-end" style="min-width: auto;">

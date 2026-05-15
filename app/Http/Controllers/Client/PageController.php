@@ -55,8 +55,25 @@ class PageController extends Controller
 
     public function products()
     {
+        $all = config('products');
+
         return view('client.pages.products.products', [
-            'site' => $this->siteData(),
+            'site'   => $this->siteData(),
+            'seeds'  => array_filter($all, fn($p) => $p['category'] === 'seeds'),
+            'herbs'  => array_filter($all, fn($p) => $p['category'] === 'herbs'),
+            'spices' => array_filter($all, fn($p) => $p['category'] === 'spices'),
+        ]);
+    }
+
+    public function productDetail(string $slug)
+    {
+        $product = collect(config('products'))->firstWhere('slug', $slug);
+
+        abort_if($product === null, 404);
+
+        return view('client.pages.products.product-detail', [
+            'site'    => $this->siteData(),
+            'product' => $product,
         ]);
     }
 

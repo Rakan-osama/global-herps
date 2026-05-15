@@ -5,8 +5,12 @@
       <div class="row">
          <div class="col-lg-6">
             <div class="choose-media position-relative">
-               <img class="img-fluid" src="{{ asset('client/assets/images/choose-img.png') }}" alt="Choose Image">
-               <img class="abs-img img-fluid" src="{{ asset('client/assets/images/choose-img2.png') }}" alt="Choose Image 2">
+               <div class="choose-main-wrap">
+                  <img src="{{ asset('client/assets/images/herbs/6.jpg') }}" alt="Egyptian Herbs">
+               </div>
+               {{-- <div class="abs-img choose-abs-wrap">
+                  <img src="{{ asset('client/assets/images/herbs/9.jpg') }}" alt="Herbs Close Up">
+               </div> --}}
             </div>
          </div>
          <div class="col-lg-6">
@@ -58,3 +62,53 @@
    </div>
 </section>
 <!-- Choose Section End -->
+<style>
+/* Main image — same width behaviour as img-fluid, fixed height for cover fit */
+.choose-main-wrap {
+  width: 100%;
+  height: 460px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+.choose-main-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+/* Overlay image — mirrors the original abs-img position (top:100px right:40px from CSS) */
+.choose-abs-wrap {
+  width: 200px;
+  height: 170px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 4px solid #fff;
+  box-shadow: 0 8px 28px rgba(0,0,0,0.18);
+}
+.choose-abs-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+@media (max-width: 1199px) {
+  .choose-main-wrap { height: 400px; }
+  .choose-abs-wrap { width: 170px; height: 145px; }
+}
+@media (max-width: 991px) {
+  .choose-main-wrap { height: 340px; }
+  .choose-abs-wrap { width: 150px; height: 125px; }
+}
+@media (max-width: 767px) {
+  .choose-main-wrap { height: 290px; }
+  .choose-abs-wrap { width: 130px; height: 108px; top: 60px !important; right: 15px !important; }
+}
+@media (max-width: 575px) {
+  .choose-main-wrap { height: 240px; border-radius: 10px; }
+  .choose-abs-wrap { display: none; }
+}
+</style>

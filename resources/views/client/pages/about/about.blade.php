@@ -32,79 +32,6 @@
    </section>
    <!-- Hero Section End -->
 
-   <!-- Intro Stats Section Start -->
-   <section class="about-details sec-padding">
-      <div class="container">
-         <div class="row">
-            <div class="col-lg-6">
-               <div class="about-thumb me-lg-4">
-                  <img class="img-fluid" src="{{ asset('client/assets/images/2148923173.jpg') }}" alt="">
-                  <h2 class="display-2">{{ _('Global Herbs · Egypt') }}</h2>
-                  <a href="{{ route('client.contact') }}" class="btn btn-primary">{{ _('Request a Quote') }} <i class="fa fa-arrow-right"></i><span></span></a>
-               </div>
-            </div>
-            <div class="col-lg-6 mt-5 mt-lg-0">
-               <div class="row gy-4 abs-info-wrap">
-                  @php
-                  $stats = [
-                     ['title' => 'Years of Experience',  'counter' => 10,  'icon' => 'icons/time.svg',     'description' => 'Consistent export-quality herbs and spices'],
-                     ['title' => 'Export Markets',       'counter' => 50,  'icon' => 'icons/location.svg', 'description' => 'European, Arab and Asian markets'],
-                     ['title' => 'Product Varieties',    'counter' => 5,   'icon' => 'icons/employee.svg', 'description' => 'Mint, Chamomile, Anise, Fenugreek, Coriander'],
-                     ['title' => 'Tons Exported',        'counter' => 120, 'icon' => 'icons/revenue.svg',  'description' => 'Premium herbs and spices annually'],
-                  ];
-                  @endphp
-                  @foreach($stats as $stat)
-                  <div class="col-lg-6 col-sm-6">
-                     <div class="abs-info">
-                        <h3 class="display-5">{{ _($stat['title']) }}</h3>
-                        <div class="d-flex align-items-center justify-content-between border-bottom">
-                           <img src="{{ asset('client/assets/images/' . $stat['icon']) }}" alt="">
-                           <span class="purecounter display-1" data-purecounter-end="{{ $stat['counter'] }}">{{ $stat['counter'] }}</span>
-                        </div>
-                        <p>{{ _($stat['description']) }}</p>
-                     </div>
-                  </div>
-                  @endforeach
-               </div>
-            </div>
-         </div>
-      </div>
-   </section>
-   <!-- Intro Stats Section End -->
-
-   <!-- Process Section Start -->
-   <section class="process-sec bg-shade sec-padding position-relative overflow-hidden">
-      <div class="container">
-         <div class="sec-intro mx-auto text-center">
-            <span class="sub-title fadeInUp">
-               <svg xmlns="http://www.w3.org/2000/svg" width="30" height="18" fill="none" viewBox="0 0 30 18">
-                  <path fill="#2ea140" d="M17.5 15.429h-4.375a.62.62 0 0 1-.442-.189.65.65 0 0 1 0-.909.62.62 0 0 1 .442-.188H17l2.84-12.857H5.625a.62.62 0 0 1-.442-.189.65.65 0 0 1 0-.909A.62.62 0 0 1 5.625 0h15a.61.61 0 0 1 .488.241.65.65 0 0 1 .122.543L18.11 14.927a.65.65 0 0 1-.22.36.6.6 0 0 1-.39.142" />
-               </svg>{{ _('How We Work') }}</span>
-            <h2>{{ _('From Farm to Export') }}</h2>
-         </div>
-         @php
-         $processCards = [
-            ['title' => 'Farm Selection',     'description' => 'Sourcing from selected Egyptian farms with optimal growing conditions, soil quality and consistent herb yield.', 'image' => 'st1.png'],
-            ['title' => 'Drying & Cleaning',  'description' => 'Controlled drying preserves essential oils and colour. Multi-step cleaning removes stems, dust and foreign matter.', 'image' => 'st2.png'],
-            ['title' => 'Packaging & Export', 'description' => 'Packed in export-grade materials to protect aroma and shelf life. Shipped with full certification and documentation.', 'image' => 'st3.png'],
-         ];
-         @endphp
-         <div class="process-wrapper d-flex justify-content-between flex-wrap mt-5">
-            @foreach($processCards as $i => $card)
-            <div class="process-card text-center fadeInUp" data-delay=".{{ ($i + 1) * 2 }}">
-               <span class="count mx-auto icon-lg bg-shade rounded-circle">{{ str_pad($i + 1, 2, '0', STR_PAD_LEFT) }}</span>
-               <div class="process-thumb rounded-circle d-flex align-items-center justify-content-center">
-                  <img src="{{ asset('client/assets/images/' . $card['image']) }}" alt="{{ _($card['title']) }}">
-               </div>
-               <h3 class="display-4">{{ _($card['title']) }}</h3>
-               <p>{{ _($card['description']) }}</p>
-            </div>
-            @endforeach
-         </div>
-      </div>
-   </section>
-   <!-- Process Section End -->
-
    <!-- Company Mission/Vision Section Start -->
    <section class="about-sec3 sec-padding">
       <div class="container">
@@ -236,12 +163,12 @@
                         <div class="operation-thumb">
                            <img src="{{ asset('client/assets/images/' . $ptab['image']) }}" alt="tab">
                         </div>
-                        <div class="opt-card bg-white rounded-4">
+                        {{-- <div class="opt-card bg-white rounded-4">
                            <span><img src="{{ asset('client/assets/images/tab-icon_green.png') }}" alt=""></span>
                            <h5>{{ _($ptab['card_title']) }}</h5>
                            <p>{{ _($ptab['card_desc']) }}</p>
                            <a class="link-btn" href="{{ route('client.products') }}">{{ _('View Products') }} <i class="fa fa-arrow-right"></i></a>
-                        </div>
+                        </div> --}}
                      </div>
                   </div>
                   @endforeach

@@ -46,7 +46,7 @@
                <div class="slide-content">
                   <div class="parallax-txt"></div>
                   <span class="sub-title h5">{{ _('Long-Term Export Partners') }}</span>
-                  <h1 class="display-1">{{ _('Consistent Quality. Reliable Supply.') }}</h1>
+                  <h1 class="display-1">{{ _('Consistent Quality , Reliable Supply.') }}</h1>
                   <p>{{ _('Working as a long-term partner for importers, tea packers and spice brands worldwide. Combining traditional agricultural know-how with controlled drying, cleaning and sorting.') }}</p>
                   <div class="d-sm-flex slide-cta gap-4">
                      <a href="{{ route('client.services') }}" class="btn btn-hover btn-primary">{{ _('Our Services') }} <i class="fa fa-arrow-right"></i><span></span></a>
