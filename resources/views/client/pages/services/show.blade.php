@@ -23,14 +23,14 @@
          <div class="row">
             <div class="col-lg-12">
                <div class="promo-wrap">
-                  <h1 class="display-2 text-info">{{ _($service->title) }}</h1>
+                  <h1 class="display-2 text-info">{{ __($service->title) }}</h1>
                   <nav aria-label="breadcrumb">
                      <ol class="breadcrumb">
                         <li class="breadcrumb-item">
-                           <a href="{{ route('client.homepage') }}">{{ _('Home') }}</a>
+                           <a href="{{ route('client.homepage') }}">{{ __('Home') }}</a>
                         </li>
                         <li class="breadcrumb-item">
-                           <a href="{{ route('client.services') }}">{{ _('Services') }}</a>
+                           <a href="{{ route('client.services') }}">{{ __('Services') }}</a>
                         </li>
                         <li class="breadcrumb-item active" aria-current="page">{{ Str::limit($service->title, 30) }}</li>
                      </ol>
@@ -54,20 +54,20 @@
                @endif
 
                @if($service->subtitle)
-               <p class="text-muted fs-5 mb-3">{{ _($service->subtitle) }}</p>
+               <p class="text-muted fs-5 mb-3">{{ __($service->subtitle) }}</p>
                @endif
 
-               <h2 class="display-4 mb-4">{{ _($service->title) }}</h2>
+               <h2 class="display-4 mb-4">{{ __($service->title) }}</h2>
 
                @if($service->main_description)
                <div class="mb-4">
-                  <p class="fs-5">{{ _($service->main_description) }}</p>
+                  <p class="fs-5">{{ __($service->main_description) }}</p>
                </div>
                @endif
 
                @if($service->sub_description)
                <div class="mb-4">
-                  <p>{{ _($service->sub_description) }}</p>
+                  <p>{{ __($service->sub_description) }}</p>
                </div>
                @endif
             </div>
@@ -86,7 +86,7 @@
             <div class="col-lg-10">
                <div class="pt-4 border-top">
                   <a href="{{ route('client.services') }}" class="btn btn-primary">
-                     <i class="fa fa-arrow-left me-2"></i> {{ _('Back to Services') }}
+                     <i class="fa fa-arrow-left me-2"></i> {{ __('Back to Services') }}
                      <span></span>
                   </a>
                </div>

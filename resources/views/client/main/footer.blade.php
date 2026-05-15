@@ -5,12 +5,12 @@
       <div class="container">
          {{-- <div class="d-md-flex justify-content-between align-items-center footer-top">
             <div class="subs-head">
-               <h2 class="display-4 text-white sec-title">{{ _('Subscribe Our Newsletter') }}</h2>
+               <h2 class="display-4 text-white sec-title">{{ __('Subscribe Our Newsletter') }}</h2>
             </div>
             <div class="subs-widget fadeInUp">
                <form action="#" class="position-relative">
-                  <input type="email" placeholder="{{ _('Your Email') }}">
-                  <button class="btn btn-primary rounded-5">{{ _('Subscribe') }} <img src="{{ asset('client/assets/images/icons/paper-plane.png') }}" alt="">
+                  <input type="email" placeholder="{{ __('Your Email') }}">
+                  <button class="btn btn-primary rounded-5">{{ __('Subscribe') }} <img src="{{ asset('client/assets/images/icons/paper-plane.png') }}" alt="">
                      <span></span>
                   </button>
                </form>
@@ -28,7 +28,7 @@
                         @endif
                      </a>
                   </div>
-                  <p>{{ _('Global Herbs is an Egyptian company specialized in growing, processing and exporting premium mint, herbs, spices and seeds to international markets with consistent quality and reliable service.') }}</p>
+                  <p>{{ __('Global Herbs is an Egyptian company specialized in growing, processing and exporting premium mint, herbs, spices and seeds to international markets with consistent quality and reliable service.') }}</p>
                   <div class="social-share">
                      @foreach($site['social_links'] ?? [] as $social)
                         <a href="{{ $social['url'] }}" target="_blank"><i class="{{ $social['icon'] }}"></i></a>
@@ -39,10 +39,10 @@
             </div>
             <div class="col-lg-2 col-sm-4 offset-sm-1 offset-lg-0">
                <div class="footer-widget">
-                  <h3 class="widget-title">{{ _('Quick Links') }}</h3>
+                  <h3 class="widget-title">{{ __('Quick Links') }}</h3>
                   <ul>
                      @foreach($site['footer_quick_links'] ?? [] as $fLink)
-                        <li><a href="{{ $fLink['url'] }}">{{ _($fLink['label']) }}</a></li>
+                        <li><a href="{{ $fLink['url'] }}">{{ __($fLink['label']) }}</a></li>
                      @endforeach
                   </ul>
                </div>
@@ -50,10 +50,10 @@
 
             <div class="col-lg-3 ps-lg-5 col-sm-6">
                <div class="footer-widget">
-                  <h3 class="widget-title">{{ _('Our Products') }}</h3>
+                  <h3 class="widget-title">{{ __('Our Products') }}</h3>
                   <ul>
                      @foreach($site['footer_product_links'] ?? [] as $pLink)
-                        <li><a href="{{ $pLink['url'] }}">{{ _($pLink['label']) }}</a></li>
+                        <li><a href="{{ $pLink['url'] }}">{{ __($pLink['label']) }}</a></li>
                      @endforeach
                   </ul>
                </div>
@@ -61,7 +61,7 @@
 
             <div class="col-lg-3 col-sm-4 offset-sm-1 offset-lg-0">
                <div class="footer-widget contact-widget">
-                  <h3 class="widget-title">{{ _('Contact Info') }}</h3>
+                  <h3 class="widget-title">{{ __('Contact Info') }}</h3>
                   <ul class="contact-info-list list-unstyled">
                      @if(!empty($site['settings']['phone']))
                         <li class="mb-2">
@@ -98,7 +98,7 @@
                         </li>
                      @endif
                   </ul>
-                  <a href="{{ route('client.contact') }}" class="btn btn-info btn-xs mt-4">{{ _('Contact Us') }} <span></span></a>
+                  <a href="{{ route('client.contact') }}" class="btn btn-info btn-xs mt-4">{{ __('Contact Us') }} <span></span></a>
                </div>
             </div>
          </div>
@@ -107,11 +107,11 @@
          <div class="container">
             <div class="d-flex flex-wrap justify-content-between align-items-center">
                <p class="text-info copy-right mb-0 order-2 order-md-1">
-                  {{ _('Copyright') }} &copy; {{ date('Y') }} {{ $site['settings']['company_name'] ?? _('Green Harvest') }} {{ _('All Rights Reserved.') }}</p>
+                  {{ __('Copyright') }} &copy; {{ date('Y') }} {{ $site['settings']['company_name'] ?? _('Green Harvest') }} {{ __('All Rights Reserved.') }}</p>
                <nav class="footer-nav order-1 order-md-2">
                   <ul>
-                     {{-- <li><a href="#">{{ _('Privacy Policy') }}</a></li>
-                     <li><a href="#">{{ _('Terms & Conditions') }}</a></li> --}}
+                     {{-- <li><a href="#">{{ __('Privacy Policy') }}</a></li>
+                     <li><a href="#">{{ __('Terms & Conditions') }}</a></li> --}}
                   </ul>
                </nav>
             </div>

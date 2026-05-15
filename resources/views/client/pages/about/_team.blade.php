@@ -12,8 +12,8 @@
    <img src="{{ asset('client/assets/images/slide-sh1.png') }}" alt="icon" class="abs-img d-none d-lg-block top-0 stat-0">
    <div class="container">
       <div class="sec-intro mx-auto text-center">
-         <span class="sub-title2 fadeInUp" data-cms-field="subtitle">{{ _($team->subtitle ?? 'Our Team') }}</span>
-         <h2 class="" data-cms-field="title">{{ _($team->title ?? 'Meet Our Agricultural Experts') }}</h2>
+         <span class="sub-title2 fadeInUp" data-cms-field="subtitle">{{ __($team->subtitle ?? 'Our Team') }}</span>
+         <h2 class="" data-cms-field="title">{{ __($team->title ?? 'Meet Our Agricultural Experts') }}</h2>
       </div>
       <div class="row gy-5">
          @foreach($teamMembers as $member)
@@ -26,7 +26,7 @@
                </div>
                <div class="team-info">
                   <h3 class="display-4 mb-0">{{ $member['name'] ?? '' }}</h3>
-                  <span>{{ _($member['role'] ?? '') }}</span>
+                  <span>{{ __($member['role'] ?? '') }}</span>
                </div>
             </div>
          </div>

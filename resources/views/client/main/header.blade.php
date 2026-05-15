@@ -4,13 +4,13 @@
          <!-- Logo Here -->
          <div class="logo">
             @if(!empty($site['settings']['company_logo']))
-               <img src="{{ asset('storage/' . $site['settings']['company_logo']) }}" alt="{{ _('Logo') }}" style="width: 150px; height: 50px">
+               <img src="{{ asset('storage/' . $site['settings']['company_logo']) }}" alt="{{ __('Logo') }}" style="width: 150px; height: 50px">
             @else
-               <img src="{{ asset('client/assets/images/green-logo1.jpeg') }}" alt="{{ _('Logo') }}" style="width: 150px; height: 50px">
+               <img src="{{ asset('client/assets/images/green-logo1.jpeg') }}" alt="{{ __('Logo') }}" style="width: 150px; height: 50px">
             @endif
          </div>
          <!-- Close Button -->
-         <button type="button" class="canvas-close" aria-label="{{ _('Close') }}">
+         <button type="button" class="canvas-close" aria-label="{{ __('Close') }}">
             <svg width="33" height="34" viewBox="0 0 37 38" fill="none" xmlns="http://www.w3.org/2000/svg">
                <path d="M9.19141 9.80762L27.5762 28.1924" stroke="currentColor" stroke-width="1.5"
                   stroke-linecap="round" stroke-linejoin="round"></path>
@@ -19,15 +19,15 @@
             </svg>
          </button>
       </div>
-      <p>{{ _('An Egyptian company dedicated to herbs, spices and seeds — grown under our sun, processed with modern technology, and shipped to partners who expect consistent export quality.') }}</p>
+      <p>{{ __('An Egyptian company dedicated to herbs, spices and seeds — grown under our sun, processed with modern technology, and shipped to partners who expect consistent export quality.') }}</p>
       <!-- Vertical Menu Start-->
 
       <div class="mt-3">
-        <h5>{{ _('Quick Links') }}</h5>
+        <h5>{{ __('Quick Links') }}</h5>
          <nav class="mt-4">
             <ul class="vertical-menu">
               @foreach($site['header_nav_links'] ?? [] as $navLink)
-                 <li><a href="{{ $navLink['url'] }}">{{ _($navLink['label']) }}</a></li>
+                 <li><a href="{{ $navLink['url'] }}">{{ __($navLink['label']) }}</a></li>
               @endforeach
             </ul>
          </nav>
@@ -39,7 +39,7 @@
             <a href="{{ $social['url'] }}" target="_blank"><i class="{{ $social['icon'] }}"></i></a>
          @endforeach
       </div>
-      <a href="{{ route('client.contact') }}" class="btn btn-primary mt-5"> {{ _('Contact Us') }} <i class="fa fa-arrow-right"></i><span></span></a>
+      <a href="{{ route('client.contact') }}" class="btn btn-primary mt-5"> {{ __('Contact Us') }} <i class="fa fa-arrow-right"></i><span></span></a>
    </div>
    <!-- Canvas Menu End -->
 
@@ -50,7 +50,7 @@
          <div class="col-lg-9 mx-auto">
             <form class="search-form w-100 mb-5">
                <input id="search-form" type="text" class="form-control shadow-1"
-                  placeholder="{{ _('Type keyword and hit enter') }}">
+                  placeholder="{{ __('Type keyword and hit enter') }}">
             </form>
 
          </div>
@@ -126,7 +126,7 @@
           <div class="nav-cta d-xl-flex order-xl-3 ms-3">
             <div class="d-flex align-items-center justify-content-between gap-3">
               <a href="{{ route('client.contact') }}" class="btn btn-primary btn-hover">
-                {{ _('Contact Us') }} <i class="fa fa-arrow-right"></i>
+                {{ __('Contact Us') }} <i class="fa fa-arrow-right"></i>
                 <span></span>
               </a>
             </div>
@@ -165,7 +165,7 @@
                 @foreach($site['header_nav_links'] ?? [] as $navLink)
                    <li class="nav-item">
                      <a class="nav-link text-black fw-bold nav-link-hover"
-                        href="{{ $navLink['url'] }}">{{ _($navLink['label']) }}</a>
+                        href="{{ $navLink['url'] }}">{{ __($navLink['label']) }}</a>
                    </li>
                 @endforeach
                 

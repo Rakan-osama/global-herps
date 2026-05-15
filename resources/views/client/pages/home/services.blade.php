@@ -3,8 +3,8 @@
   <div class="container position-relative">
     <div class="d-sm-flex align-items-center justify-content-between">
       <div class="sec-intro">
-        <span class="sub-title fadeInUp">{{ _('Our Products') }}</span>
-        <h2>{{ _('Premium Egyptian Herbs, Spices & Seeds') }}</h2>
+        <span class="sub-title fadeInUp">{{ __('Our Products') }}</span>
+        <h2>{{ __('Premium Egyptian Herbs, Spices & Seeds') }}</h2>
       </div>
       <div class="header-slider-nav fadeInUp">
         <div class="swiper-button-next"></div>
@@ -23,15 +23,15 @@
               <div class="service-card bg-white round">
                 <div class="service-head d-flex gap-3 align-items-center">
                   <img src="{{ asset('client/assets/images/icons/serv1_green.png') }}" alt="Icon">
-                  <h3 class="display-4 m-0"><a href="{{ route('client.products') }}">{{ _('Egyptian Mint') }}</a></h3>
+                  <h3 class="display-4 m-0"><a href="{{ route('client.products') }}">{{ __('Egyptian Mint') }}</a></h3>
                 </div>
                 <div class="service-thumb">
                   <img class="img-fluid" src="{{ asset('client/assets/images/herbs/1.jpg') }}" alt="">
                 </div>
-                <p>{{ _('Deep green leaves, high oil content and a sharp, clean aroma. Field-selected mint from prime Egyptian regions, gently dried to preserve maximum essential oils.') }}</p>
+                <p>{{ __('Deep green leaves, high oil content and a sharp, clean aroma. Field-selected mint from prime Egyptian regions, gently dried to preserve maximum essential oils.') }}</p>
                 <div class="service-footer border-top">
                   <a class="custom-btn" href="{{ route('client.products') }}">
-                    <span class="icon rounded-3"><i class="fa fa-arrow-right"></i></span>{{ _('View Details') }}
+                    <span class="icon rounded-3"><i class="fa fa-arrow-right"></i></span>{{ __('View Details') }}
                   </a>
                 </div>
               </div>
@@ -41,15 +41,15 @@
               <div class="service-card bg-white round">
                 <div class="service-head d-flex gap-3 align-items-center">
                   <img src="{{ asset('client/assets/images/icons/serv2_green.png') }}" alt="Icon">
-                  <h3 class="display-4 m-0"><a href="{{ route('client.products') }}">{{ _('Chamomile') }}</a></h3>
+                  <h3 class="display-4 m-0"><a href="{{ route('client.products') }}">{{ __('Chamomile') }}</a></h3>
                 </div>
                 <div class="service-thumb">
                   <img class="img-fluid" src="{{ asset('client/assets/images/herbs/2.jpg') }}" alt="">
                 </div>
-                <p>{{ _('Premium Egyptian chamomile flowers with high volatile oil content, bright colour and characteristic aroma. Meets strict requirements of herbal tea and pharmaceutical markets.') }}</p>
+                <p>{{ __('Premium Egyptian chamomile flowers with high volatile oil content, bright colour and characteristic aroma. Meets strict requirements of herbal tea and pharmaceutical markets.') }}</p>
                 <div class="service-footer border-top">
                   <a class="custom-btn" href="{{ route('client.products') }}">
-                    <span class="icon rounded-3"><i class="fa fa-arrow-right"></i></span>{{ _('View Details') }}
+                    <span class="icon rounded-3"><i class="fa fa-arrow-right"></i></span>{{ __('View Details') }}
                   </a>
                 </div>
               </div>
@@ -59,15 +59,15 @@
               <div class="service-card bg-white round">
                 <div class="service-head d-flex gap-3 align-items-center">
                   <img src="{{ asset('client/assets/images/icons/serv3_green.png') }}" alt="Icon">
-                  <h3 class="display-4 m-0"><a href="{{ route('client.products') }}">{{ _('Anise Seeds') }}</a></h3>
+                  <h3 class="display-4 m-0"><a href="{{ route('client.products') }}">{{ __('Anise Seeds') }}</a></h3>
                 </div>
                 <div class="service-thumb">
                   <img class="img-fluid" src="{{ asset('client/assets/images/herbs/3.jpg') }}" alt="">
                 </div>
-                <p>{{ _('Egyptian anise seeds with rich aroma and high anethole content. Carefully cleaned, sorted and dried to export-grade specifications for spice blenders and food manufacturers worldwide.') }}</p>
+                <p>{{ __('Egyptian anise seeds with rich aroma and high anethole content. Carefully cleaned, sorted and dried to export-grade specifications for spice blenders and food manufacturers worldwide.') }}</p>
                 <div class="service-footer border-top">
                   <a class="custom-btn" href="{{ route('client.products') }}">
-                    <span class="icon rounded-3"><i class="fa fa-arrow-right"></i></span>{{ _('View Details') }}
+                    <span class="icon rounded-3"><i class="fa fa-arrow-right"></i></span>{{ __('View Details') }}
                   </a>
                 </div>
               </div>
@@ -77,15 +77,15 @@
               <div class="service-card bg-white round">
                 <div class="service-head d-flex gap-3 align-items-center">
                   <img src="{{ asset('client/assets/images/icons/serv4_green.png') }}" alt="Icon">
-                  <h3 class="display-4 m-0"><a href="{{ route('client.products') }}">{{ _('Fenugreek') }}</a></h3>
+                  <h3 class="display-4 m-0"><a href="{{ route('client.products') }}">{{ __('Fenugreek') }}</a></h3>
                 </div>
                 <div class="service-thumb">
                   <img class="img-fluid" src="{{ asset('client/assets/images/herbs/4.jpg') }}" alt="">
                 </div>
-                <p>{{ _('High-quality Egyptian fenugreek seeds with consistent size, colour and low impurity levels. Trusted by spice brands, health supplement producers and food manufacturers.') }}</p>
+                <p>{{ __('High-quality Egyptian fenugreek seeds with consistent size, colour and low impurity levels. Trusted by spice brands, health supplement producers and food manufacturers.') }}</p>
                 <div class="service-footer border-top">
                   <a class="custom-btn" href="{{ route('client.products') }}">
-                    <span class="icon rounded-3"><i class="fa fa-arrow-right"></i></span>{{ _('View Details') }}
+                    <span class="icon rounded-3"><i class="fa fa-arrow-right"></i></span>{{ __('View Details') }}
                   </a>
                 </div>
               </div>
@@ -95,15 +95,15 @@
               <div class="service-card bg-white round">
                 <div class="service-head d-flex gap-3 align-items-center">
                   <img src="{{ asset('client/assets/images/icons/serv1_green.png') }}" alt="Icon">
-                  <h3 class="display-4 m-0"><a href="{{ route('client.products') }}">{{ _('Coriander') }}</a></h3>
+                  <h3 class="display-4 m-0"><a href="{{ route('client.products') }}">{{ __('Coriander') }}</a></h3>
                 </div>
                 <div class="service-thumb">
                   <img class="img-fluid" src="{{ asset('client/assets/images/herbs/5.jpg') }}" alt="">
                 </div>
-                <p>{{ _('Egyptian coriander seeds prized for their balanced lemon-spice aroma and high oil yield. Supplied whole or split to spice blenders and food manufacturers year-round.') }}</p>
+                <p>{{ __('Egyptian coriander seeds prized for their balanced lemon-spice aroma and high oil yield. Supplied whole or split to spice blenders and food manufacturers year-round.') }}</p>
                 <div class="service-footer border-top">
                   <a class="custom-btn" href="{{ route('client.products') }}">
-                    <span class="icon rounded-3"><i class="fa fa-arrow-right"></i></span>{{ _('View Details') }}
+                    <span class="icon rounded-3"><i class="fa fa-arrow-right"></i></span>{{ __('View Details') }}
                   </a>
                 </div>
               </div>

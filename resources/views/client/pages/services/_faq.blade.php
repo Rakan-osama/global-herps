@@ -12,8 +12,8 @@
 <section class="faq-sec sec-padding position-relative">
    <div class="container">
       <div class="sec-intro mx-auto text-center">
-         <span class="sub-title2 fadeInUp" data-cms-field="subtitle">{{ _($faq->subtitle ?? 'Frequently Asked Questions') }}</span>
-         <h2 class="" data-cms-field="title">{{ _($faq->title ?? 'Common Questions About Green Harvest') }}</h2>
+         <span class="sub-title2 fadeInUp" data-cms-field="subtitle">{{ __($faq->subtitle ?? 'Frequently Asked Questions') }}</span>
+         <h2 class="" data-cms-field="title">{{ __($faq->title ?? 'Common Questions About Green Harvest') }}</h2>
       </div>
       <div class="row gy-4">
          <div class="col-lg-7">
@@ -23,13 +23,13 @@
                   <h2 class="accordion-header" id="heading{{ $fi }}">
                      <button class="accordion-button display-5 {{ $fi > 0 ? 'collapsed' : '' }}" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapse{{ $fi }}" aria-expanded="{{ $fi === 0 ? 'true' : 'false' }}" aria-controls="collapse{{ $fi }}">
-                        {{ _($faqItem['question'] ?? '') }}
+                        {{ __($faqItem['question'] ?? '') }}
                      </button>
                   </h2>
                   <div id="collapse{{ $fi }}" class="accordion-collapse collapse {{ $fi === 0 ? 'show' : '' }}" aria-labelledby="heading{{ $fi }}"
                      data-bs-parent="#tv-accordion">
                      <div class="accordion-body">
-                        <p>{{ _($faqItem['answer'] ?? '') }}</p>
+                        <p>{{ __($faqItem['answer'] ?? '') }}</p>
                      </div>
                   </div>
                </div>

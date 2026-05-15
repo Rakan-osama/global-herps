@@ -16,7 +16,7 @@
                   <img src="{{ $company?->getFirstMediaUrl('image_1') ?: asset('client/assets/images/19103.jpg') }}" class="img-fluid round"  alt="about">
                   <div class="experien-stat">
                      <p class="text-info m-0"> <span class="purecounter" data-purecounter-end="{{ $company->first_card_title ?? '25' }}"
-                           data-purecounter-duration="0">{{ $company->first_card_title ?? '25' }}</span>+ {{ _($company->first_card_description ?? 'Years Experience') }}</p>
+                           data-purecounter-duration="0">{{ $company->first_card_title ?? '25' }}</span>+ {{ __($company->first_card_description ?? 'Years Experience') }}</p>
                   </div>
                </div>
                <div class="d-flex ab-sm-ft align-items-center gap-4">
@@ -36,15 +36,15 @@
                      <path fill="#2ea140"
                         d="M17.5 15.429h-4.375a.62.62 0 0 1-.442-.189.65.65 0 0 1 0-.909.62.62 0 0 1 .442-.188H17l2.84-12.857H5.625a.62.62 0 0 1-.442-.189.65.65 0 0 1 0-.909A.62.62 0 0 1 5.625 0h15a.61.61 0 0 1 .488.241.65.65 0 0 1 .122.543L18.11 14.927a.65.65 0 0 1-.22.36.6.6 0 0 1-.39.142" />
                   </svg>
-                  {{ _($company->subtitle ?? 'About Our Company') }}</span>
-               <h2 class="" data-cms-field="title">{{ _($company->title ?? 'Premium Egyptian Agricultural Products') }}</h2>
-               <p data-cms-field="main_description">{{ _($company->main_description ?? 'Green Harvest operates through an integrated system that includes cultivation, processing, packaging, and export operations adhering to the highest international standards of quality and food safety.') }}</p>
+                  {{ __($company->subtitle ?? 'About Our Company') }}</span>
+               <h2 class="" data-cms-field="title">{{ __($company->title ?? 'Premium Egyptian Agricultural Products') }}</h2>
+               <p data-cms-field="main_description">{{ __($company->main_description ?? 'Green Harvest operates through an integrated system that includes cultivation, processing, packaging, and export operations adhering to the highest international standards of quality and food safety.') }}</p>
 
                <ul class="nav nav-tabs" id="myTab" role="tablist">
                   @foreach($tabs as $ti => $tab)
                   <li class="nav-item" role="presentation">
                      <button class="nav-link {{ $ti === 0 ? 'active' : '' }}" id="{{ $tab['id'] ?? 'tab'.$ti }}-tab" data-bs-toggle="tab" data-bs-target="#{{ $tab['id'] ?? 'tab'.$ti }}"
-                        type="button" role="tab" aria-controls="{{ $tab['id'] ?? 'tab'.$ti }}" aria-selected="{{ $ti === 0 ? 'true' : 'false' }}">{{ _($tab['tab_title'] ?? '') }}</button>
+                        type="button" role="tab" aria-controls="{{ $tab['id'] ?? 'tab'.$ti }}" aria-selected="{{ $ti === 0 ? 'true' : 'false' }}">{{ __($tab['tab_title'] ?? '') }}</button>
                   </li>
                   @endforeach
                </ul>
@@ -56,23 +56,23 @@
                            <img src="{{ asset('client/assets/images/' . ($tab['image'] ?? '2148173915.jpg')) }}" class="img-fluid rounded-4" alt="tab">
                         </div>
                         <div class="tab-txt">
-                           <p>{{ _($tab['text_1'] ?? '') }}</p>
-                           <p>{{ _($tab['text_2'] ?? '') }}</p>
+                           <p>{{ __($tab['text_1'] ?? '') }}</p>
+                           <p>{{ __($tab['text_2'] ?? '') }}</p>
                         </div>
                      </div>
-                     <h6>{{ _($tab['summary'] ?? '') }}</h6>
+                     <h6>{{ __($tab['summary'] ?? '') }}</h6>
                   </div>
                   @endforeach
                </div>
                <div class="d-sm-flex align-items-center about-cta gap-5 mt-5">
-                  <a href="{{ $company->first_button_link ?? route('client.services') }}" class="btn btn-primary">{{ _($company->first_button_text ?? 'Our Services') }} <i
+                  <a href="{{ $company->first_button_link ?? route('client.services') }}" class="btn btn-primary">{{ __($company->first_button_text ?? 'Our Services') }} <i
                         class="fa fa-arrow-right"></i><span></span> </a>
 
                   <div class="quick-call d-flex align-items-center">
                      <span class="bg-dark icon-lg rounded-circle text-info"><i
                            class="fa-solid fa-phone-volume"></i></span>
                      <div class="conn-txt ms-3">
-                        <p class="m-0">{{ _($company->second_button_text ?? 'Call Us Any Time:') }}</p>
+                        <p class="m-0">{{ __($company->second_button_text ?? 'Call Us Any Time:') }}</p>
                         <a class="h6 text-primary" href="tel:{{ $company->second_button_link ?? '148359505285' }}">{{ $company->second_button_link ?? '148 359 505 285' }}</a>
                      </div>
                   </div>

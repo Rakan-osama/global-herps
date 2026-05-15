@@ -25,14 +25,14 @@
                         <path fill="#2ea140"
                            d="M17.5 15.429h-4.375a.62.62 0 0 1-.442-.189.65.65 0 0 1 0-.909.62.62 0 0 1 .442-.188H17l2.84-12.857H5.625a.62.62 0 0 1-.442-.189.65.65 0 0 1 0-.909A.62.62 0 0 1 5.625 0h15a.61.61 0 0 1 .488.241.65.65 0 0 1 .122.543L18.11 14.927a.65.65 0 0 1-.22.36.6.6 0 0 1-.39.142" />
                      </svg>
-                     {{ _($whyS->subtitle ?? 'Why Choose Us') }}</span>
-                  <h2 class=" text-white" data-cms-field="title">{{ _($whyS->title ?? 'Why Choose Green Harvest') }}</h2>
-                  <p data-cms-field="main_description">{{ _($whyS->main_description ?? 'Green Harvest believes that quality starts from the soil and continues through every stage until the product reaches the end consumer.') }}</p>
+                     {{ __($whyS->subtitle ?? 'Why Choose Us') }}</span>
+                  <h2 class=" text-white" data-cms-field="title">{{ __($whyS->title ?? 'Why Choose Green Harvest') }}</h2>
+                  <p data-cms-field="main_description">{{ __($whyS->main_description ?? 'Green Harvest believes that quality starts from the soil and continues through every stage until the product reaches the end consumer.') }}</p>
                </div>
                <div class="success-stat">
                   @foreach($progressBars as $bar)
                   <div class="progress">
-                     <div class="meta">{{ _($bar['label'] ?? '') }}</div>
+                     <div class="meta">{{ __($bar['label'] ?? '') }}</div>
                      <div class="progress-bar" data-progress="{{ $bar['value'] ?? 0 }}%" style="width: {{ $bar['value'] ?? 0 }}%;">
                         <span>{{ $bar['value'] ?? 0 }}%</span>
                      </div>
@@ -43,7 +43,7 @@
                   <span class="bg-info icon-lg rounded-circle text-primary"><i
                         class="fa-solid fa-phone-volume"></i></span>
                   <div class="conn-txt ms-3">
-                     <p class="m-0">{{ _($whyS->first_button_text ?? 'Call Us Any Time:') }}</p>
+                     <p class="m-0">{{ __($whyS->first_button_text ?? 'Call Us Any Time:') }}</p>
                      <a class="h6 text-info" href="tel:{{ preg_replace('/[^0-9+]/', '', $whyPhone) }}">{{ $whyPhone }}</a>
                   </div>
                </div>

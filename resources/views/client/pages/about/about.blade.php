@@ -18,11 +18,11 @@
          <div class="row">
             <div class="col-lg-12">
                <div class="promo-wrap">
-                  <h1 class="display-2 text-info">{{ _('About Us') }}</h1>
+                  <h1 class="display-2 text-info">{{ __('About Us') }}</h1>
                   <nav aria-label="breadcrumb">
                      <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="{{ route('client.homepage') }}">{{ _('Home') }}</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">{{ _('About Us') }}</li>
+                        <li class="breadcrumb-item"><a href="{{ route('client.homepage') }}">{{ __('Home') }}</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">{{ __('About Us') }}</li>
                      </ol>
                   </nav>
                </div>
@@ -41,7 +41,7 @@
                   <div class="feat-img position-relative mb-5">
                      <img src="{{ asset('client/assets/images/herbs/7.jpg') }}" class="img-fluid round" alt="about">
                      <div class="experien-stat">
-                        <p class="text-info m-0"><span class="purecounter" data-purecounter-end="10" data-purecounter-duration="0">10</span>+ {{ _('Years Experience') }}</p>
+                        <p class="text-info m-0"><span class="purecounter" data-purecounter-end="10" data-purecounter-duration="0">10</span>+ {{ __('Years Experience') }}</p>
                      </div>
                   </div>
                </div>
@@ -52,19 +52,19 @@
                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="18" fill="none" viewBox="0 0 30 18">
                         <path fill="#2ea140" d="M17.5 15.429h-4.375a.62.62 0 0 1-.442-.189.65.65 0 0 1 0-.909.62.62 0 0 1 .442-.188H17l2.84-12.857H5.625a.62.62 0 0 1-.442-.189.65.65 0 0 1 0-.909A.62.62 0 0 1 5.625 0h15a.61.61 0 0 1 .488.241.65.65 0 0 1 .122.543L18.11 14.927a.65.65 0 0 1-.22.36.6.6 0 0 1-.39.142" />
                      </svg>
-                     {{ _('About Our Company') }}</span>
-                  <h2>{{ _('Dedicated to Quality Egyptian Herbs') }}</h2>
-                  <p>{{ _('Global Herbs is an Egyptian company specialized in growing, processing and exporting premium mint, herbs, spices and seeds to international markets. We combine traditional agricultural know-how with modern processing technology to deliver consistent export-grade quality.') }}</p>
+                     {{ __('About Our Company') }}</span>
+                  <h2>{{ __('Dedicated to Quality Egyptian Herbs') }}</h2>
+                  <p>{{ __('Global Herbs is an Egyptian company specialized in growing, processing and exporting premium mint, herbs, spices and seeds to international markets. We combine traditional agricultural know-how with modern processing technology to deliver consistent export-grade quality.') }}</p>
 
                   <ul class="nav nav-tabs" id="aboutTab" role="tablist">
                      <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="mission-tab" data-bs-toggle="tab" data-bs-target="#mission" type="button" role="tab" aria-selected="true">{{ _('Our Mission') }}</button>
+                        <button class="nav-link active" id="mission-tab" data-bs-toggle="tab" data-bs-target="#mission" type="button" role="tab" aria-selected="true">{{ __('Our Mission') }}</button>
                      </li>
                      <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="vision-tab" data-bs-toggle="tab" data-bs-target="#vision" type="button" role="tab" aria-selected="false">{{ _('Our Vision') }}</button>
+                        <button class="nav-link" id="vision-tab" data-bs-toggle="tab" data-bs-target="#vision" type="button" role="tab" aria-selected="false">{{ __('Our Vision') }}</button>
                      </li>
                      <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="values-tab" data-bs-toggle="tab" data-bs-target="#values" type="button" role="tab" aria-selected="false">{{ _('Our Values') }}</button>
+                        <button class="nav-link" id="values-tab" data-bs-toggle="tab" data-bs-target="#values" type="button" role="tab" aria-selected="false">{{ __('Our Values') }}</button>
                      </li>
                   </ul>
                   <div class="tab-content" id="aboutTabContent">
@@ -74,11 +74,11 @@
                               <img src="{{ asset('client/assets/images/herbs/1.jpg') }}" class="img-fluid rounded-4" alt="mission">
                            </div>
                            <div class="tab-txt">
-                              <p>{{ _('To supply safe, high-quality Egyptian herbs, spices and seeds that consistently meet the specifications of international importers, tea packers and spice brands.') }}</p>
-                              <p>{{ _('We focus on natural products grown under the Egyptian sun and processed with modern technology to preserve the character that makes them sought after worldwide.') }}</p>
+                              <p>{{ __('To supply safe, high-quality Egyptian herbs, spices and seeds that consistently meet the specifications of international importers, tea packers and spice brands.') }}</p>
+                              <p>{{ __('We focus on natural products grown under the Egyptian sun and processed with modern technology to preserve the character that makes them sought after worldwide.') }}</p>
                            </div>
                         </div>
-                        <h6>{{ _('Consistent quality from field to shipment that is the Global Herbs promise.') }}</h6>
+                        <h6>{{ __('Consistent quality from field to shipment that is the Global Herbs promise.') }}</h6>
                      </div>
                      <div class="tab-pane fade" id="vision" role="tabpanel">
                         <div class="d-sm-flex gap-4 mb-3">
@@ -86,11 +86,11 @@
                               <img src="{{ asset('client/assets/images/herbs/2.jpg') }}" class="img-fluid rounded-4" alt="vision">
                            </div>
                            <div class="tab-txt">
-                              <p>{{ _('To become the most trusted Egyptian exporter of premium herbs and spices, recognised globally for product integrity, reliable supply and long-term partnership.') }}</p>
-                              <p>{{ _('We aim to expand our product range and market reach while staying true to values of quality, transparency and sustainability.') }}</p>
+                              <p>{{ __('To become the most trusted Egyptian exporter of premium herbs and spices, recognised globally for product integrity, reliable supply and long-term partnership.') }}</p>
+                              <p>{{ __('We aim to expand our product range and market reach while staying true to values of quality, transparency and sustainability.') }}</p>
                            </div>
                         </div>
-                        <h6>{{ _('A long-term partner for importers who expect consistent, export-grade results.') }}</h6>
+                        <h6>{{ __('A long-term partner for importers who expect consistent, export-grade results.') }}</h6>
                      </div>
                      <div class="tab-pane fade" id="values" role="tabpanel">
                         <div class="d-sm-flex gap-4 mb-3">
@@ -98,20 +98,20 @@
                               <img src="{{ asset('client/assets/images/herbs/3.jpg') }}" class="img-fluid rounded-4" alt="values">
                            </div>
                            <div class="tab-txt">
-                              <p>{{ _('Quality starts in the field and continues through every processing step. We operate on values of excellence, transparency and commitment to specifications.') }}</p>
-                              <p>{{ _('We respect our farmers, our clients, and our products. Every batch we ship carries the reputation of Egyptian herbs we take that seriously.') }}</p>
+                              <p>{{ __('Quality starts in the field and continues through every processing step. We operate on values of excellence, transparency and commitment to specifications.') }}</p>
+                              <p>{{ __('We respect our farmers, our clients, and our products. Every batch we ship carries the reputation of Egyptian herbs we take that seriously.') }}</p>
                            </div>
                         </div>
-                        <h6>{{ _('Excellence, transparency, and long-term partnership the Global Herbs way.') }}</h6>
+                        <h6>{{ __('Excellence, transparency, and long-term partnership the Global Herbs way.') }}</h6>
                      </div>
                   </div>
 
                   <div class="d-sm-flex align-items-center about-cta gap-5 mt-5">
-                     <a href="{{ route('client.services') }}" class="btn btn-primary">{{ _('Our Services') }} <i class="fa fa-arrow-right"></i><span></span></a>
+                     <a href="{{ route('client.services') }}" class="btn btn-primary">{{ __('Our Services') }} <i class="fa fa-arrow-right"></i><span></span></a>
                      <div class="quick-call d-flex align-items-center">
                         <span class="bg-dark icon-lg rounded-circle text-info"><i class="fa-solid fa-phone-volume"></i></span>
                         <div class="conn-txt ms-3">
-                           <p class="m-0">{{ _('Call Us Any Time:') }}</p>
+                           <p class="m-0">{{ __('Call Us Any Time:') }}</p>
                            <a class="h6 text-primary" href="tel:01012608815">01012608815</a>
                         </div>
                      </div>
@@ -130,8 +130,8 @@
       <div class="container ct-container">
          <div class="row">
             <div class="col-lg-7 pe-lg-5">
-               <span class="sub-title2 fadeInUp single">{{ _('Our Products') }}</span>
-               <h2 class="text-info">{{ _('Premium Egyptian Herbs, Spices & Seeds for Global Markets') }}</h2>
+               <span class="sub-title2 fadeInUp single">{{ __('Our Products') }}</span>
+               <h2 class="text-info">{{ __('Premium Egyptian Herbs, Spices & Seeds for Global Markets') }}</h2>
                @php
                $productTabs = [
                   ['id' => 'mint',      'nav_title' => 'Egyptian Mint',  'nav_desc' => 'High oil content, deep colour, low stem and dust the crop Global Herbs is built on.',      'image' => 'herbs/1.jpg', 'card_title' => 'Egyptian Mint',  'card_desc' => 'Field-selected mint from prime Egyptian regions, designed for premium tea and herbal infusion brands.'],
@@ -146,8 +146,8 @@
                         id="{{ $ptab['id'] }}-tab" data-bs-toggle="tab" data-bs-target="#{{ $ptab['id'] }}"
                         type="button" role="tab" aria-controls="{{ $ptab['id'] }}" aria-selected="{{ $pi === 0 ? 'true' : 'false' }}">
                         <div class="th-info">
-                           <h4 class="text-info">{{ _($ptab['nav_title']) }}</h4>
-                           <p class="text-info">{{ _($ptab['nav_desc']) }}</p>
+                           <h4 class="text-info">{{ __($ptab['nav_title']) }}</h4>
+                           <p class="text-info">{{ __($ptab['nav_desc']) }}</p>
                         </div>
                         <span class="icon-lg rounded-circle"><i class="fa fa-arrow-right"></i></span>
                      </div>
@@ -165,9 +165,9 @@
                         </div>
                         {{-- <div class="opt-card bg-white rounded-4">
                            <span><img src="{{ asset('client/assets/images/tab-icon_green.png') }}" alt=""></span>
-                           <h5>{{ _($ptab['card_title']) }}</h5>
-                           <p>{{ _($ptab['card_desc']) }}</p>
-                           <a class="link-btn" href="{{ route('client.products') }}">{{ _('View Products') }} <i class="fa fa-arrow-right"></i></a>
+                           <h5>{{ __($ptab['card_title']) }}</h5>
+                           <p>{{ __($ptab['card_desc']) }}</p>
+                           <a class="link-btn" href="{{ route('client.products') }}">{{ __('View Products') }} <i class="fa fa-arrow-right"></i></a>
                         </div> --}}
                      </div>
                   </div>

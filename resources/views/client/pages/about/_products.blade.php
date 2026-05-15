@@ -13,9 +13,9 @@
    <div class="container ct-container">
       <div class="row">
          <div class="col-lg-7 pe-lg-5">
-            <span class="sub-title2 fadeInUp single" data-cms-field="subtitle">{{ _($prods->subtitle ?? 'Our Products') }}</span>
+            <span class="sub-title2 fadeInUp single" data-cms-field="subtitle">{{ __($prods->subtitle ?? 'Our Products') }}</span>
             <h2 class=" text-info" data-cms-field="title">
-               {{ _($prods->title ?? 'Premium Egyptian Agricultural Products for Global Markets') }}</h2>
+               {{ __($prods->title ?? 'Premium Egyptian Agricultural Products for Global Markets') }}</h2>
             <div class="ct-tab nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
                aria-orientation="vertical">
                @foreach($productTabs as $pi => $ptab)
@@ -24,8 +24,8 @@
                      data-bs-toggle="tab" data-bs-target="#{{ $ptab['id'] ?? 'ptab'.$pi }}" type="button" role="tab" aria-controls="{{ $ptab['id'] ?? 'ptab'.$pi }}"
                      aria-selected="{{ $pi === 0 ? 'true' : 'false' }}">
                      <div class="th-info">
-                        <h4 class="text-info">{{ _($ptab['nav_title'] ?? '') }}</h4>
-                        <p class="text-info">{{ _($ptab['nav_desc'] ?? '') }}</p>
+                        <h4 class="text-info">{{ __($ptab['nav_title'] ?? '') }}</h4>
+                        <p class="text-info">{{ __($ptab['nav_desc'] ?? '') }}</p>
                      </div>
                      <span class="icon-lg rounded-circle"><i class="fa fa-arrow-right"></i></span>
                   </div>
@@ -43,9 +43,9 @@
                      </div>
                      <div class="opt-card bg-white  rounded-4">
                         <span><img src="{{ asset('client/assets/images/tab-icon_green.png') }}" alt=""></span>
-                        <h5>{{ _($ptab['card_title'] ?? '') }}</h5>
-                        <p>{{ _($ptab['card_desc'] ?? '') }}</p>
-                        <a class="link-btn" href="{{ route('client.services') }}">{{ _('More Details') }} <i
+                        <h5>{{ __($ptab['card_title'] ?? '') }}</h5>
+                        <p>{{ __($ptab['card_desc'] ?? '') }}</p>
+                        <a class="link-btn" href="{{ route('client.services') }}">{{ __('More Details') }} <i
                               class="fa fa-arrow-right"></i></a>
                      </div>
                   </div>

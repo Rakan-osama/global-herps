@@ -12,8 +12,8 @@
                   <path fill="#2ea140"
                      d="M17.5 15.429h-4.375a.62.62 0 0 1-.442-.189.65.65 0 0 1 0-.909.62.62 0 0 1 .442-.188H17l2.84-12.857H5.625a.62.62 0 0 1-.442-.189.65.65 0 0 1 0-.909A.62.62 0 0 1 5.625 0h15a.61.61 0 0 1 .488.241.65.65 0 0 1 .122.543L18.11 14.927a.65.65 0 0 1-.22.36.6.6 0 0 1-.39.142" />
                </svg>
-               {{ _($blogsHeader?->subtitle ?? 'Latest News') }}</span>
-            <h2 class="" data-cms-field="title">{{ _($blogsHeader?->title ?? 'Agricultural Insights & Updates') }}</h2>
+               {{ __($blogsHeader?->subtitle ?? 'Latest News') }}</span>
+            <h2 class="" data-cms-field="title">{{ __($blogsHeader?->title ?? 'Agricultural Insights & Updates') }}</h2>
          </div>
          <div class="row justify-content-md-center">
             @forelse($blogs ?? collect() as $blog)
@@ -29,14 +29,14 @@
                      <span><i class="fa-regular fa-calendar-days"></i> {{ $blog->published_at->format('d M Y') }}</span>
                      @endif
                   </div>
-                  <h3 class="display-4">{{ _($blog->title) }}</h3>
-                  <a href="{{ route('client.blog', $blog->slug) }}" class="link-btn">{{ _('Read More') }} <i
+                  <h3 class="display-4">{{ __($blog->title) }}</h3>
+                  <a href="{{ route('client.blog', $blog->slug) }}" class="link-btn">{{ __('Read More') }} <i
                         class="fa-solid fa-circle-arrow-right"></i></a>
                </div>
             </div>
             @empty
             <div class="col-12 text-center text-muted py-4">
-               <p>{{ _('No blog posts yet.') }}</p>
+               <p>{{ __('No blog posts yet.') }}</p>
             </div>
             @endforelse
          </div>

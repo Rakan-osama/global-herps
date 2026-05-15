@@ -7,13 +7,13 @@
       <div class="row">
          <div class="col-lg-12">
             <div class="promo-wrap">
-               <h1 class="display-2 text-info" data-cms-field="title">{{ _($hero->title ?? 'About Us') }}</h1>
+               <h1 class="display-2 text-info" data-cms-field="title">{{ __($hero->title ?? 'About Us') }}</h1>
                <nav aria-label="breadcrumb">
                   <ol class="breadcrumb">
                      <li class="breadcrumb-item">
-                        <a href="{{ route('client.homepage') }}">{{ _('Home') }}</a>
+                        <a href="{{ route('client.homepage') }}">{{ __('Home') }}</a>
                      </li>
-                     <li class="breadcrumb-item active" aria-current="page">{{ _($hero->title ?? 'About Us') }}</li>
+                     <li class="breadcrumb-item active" aria-current="page">{{ __($hero->title ?? 'About Us') }}</li>
                   </ol>
                </nav>
             </div>

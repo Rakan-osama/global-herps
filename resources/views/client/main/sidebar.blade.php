@@ -11,12 +11,12 @@
                         <img src="{{ asset('client/assets/images/icons/boomark.png') }}" alt="Bookmark icon">
                      </div>
                   </div>
-                  <p class="sub-title h4">{{ _('Egyptian Herbs, Spices & Seeds') }}</p>
-                  <h1 class="text-info fw-bold">{{ _('Premium Quality. Reliable Export.') }}</h1>
+                  <p class="sub-title h4">{{ __('Egyptian Herbs, Spices & Seeds') }}</p>
+                  <h1 class="text-info fw-bold">{{ __('Premium Quality. Reliable Export.') }}</h1>
 
                   <div class="slide-meta">
-                     <p class="h6 text-info">{{ _('An Egyptian company dedicated to herbs, spices and seeds — grown under our sun, processed with modern technology, and shipped to partners who expect consistent export quality.') }}</p>
-                     <a href="{{ route('client.contact') }}" class="btn btn-primary">{{ _("Let's Get Started") }} <i class="fa fa-arrow-right"
+                     <p class="h6 text-info">{{ __('An Egyptian company dedicated to herbs, spices and seeds — grown under our sun, processed with modern technology, and shipped to partners who expect consistent export quality.') }}</p>
+                     <a href="{{ route('client.contact') }}" class="btn btn-primary">{{ __("Let's Get Started") }} <i class="fa fa-arrow-right"
                            aria-hidden="true"></i></a>
                   </div>
                </div>
@@ -49,7 +49,7 @@
                      <div class="stat-info">
                         <span class="display-5 purecounter text-primary" data-purecounter-end="120000"
                            data-purecounter-currency=" "></span>
-                        <h2 class="h5">{{ _('Tons Exported') }}</h2>
+                        <h2 class="h5">{{ __('Tons Exported') }}</h2>
                      </div>
                   </div>
                </div>
