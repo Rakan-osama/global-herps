@@ -4,7 +4,7 @@
       <div class="row">
          <div class="col-lg-4">
             <div class="review-thumb">
-               <img class="img-fluid" src="{{ asset('client/assets/images/herbs/10.webp') }}" alt="review">
+               <img class="img-fluid" src="{{ asset('client/assets/images/herbs/10.webp') }}" alt="review" width="460" height="500" loading="lazy" decoding="async">
             </div>
          </div>
          <div class="col-lg-8">

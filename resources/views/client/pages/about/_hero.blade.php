@@ -1,7 +1,7 @@
 @php $hero = $hero ?? null; @endphp
 <!-- Promo Section Start -->
 <section class="promo-sec bg-cover jarallax" data-jarallax data-speed=".4">
-   <img src="{{ $hero?->getFirstMediaUrl('hero_background') ?: asset('client/assets/images/41361.jpg') }}" alt="" class="jarallax-img">
+   <img src="{{ $hero?->getFirstMediaUrl('hero_background') ?: asset('client/assets/images/41361.jpg') }}" alt="" class="jarallax-img" fetchpriority="high" decoding="async" width="1920" height="800">
    <div class="parallax-overly"></div>
    <div class="container">
       <div class="row">

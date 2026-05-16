@@ -1,6 +1,9 @@
 @push('styles')
 <link rel="stylesheet" href="{{ asset('client/assets/css/fancybox.css') }}?v=1.0.1">
 @endpush
+@push('scripts')
+<script src="{{ asset('client/assets/js/fancybox.umd.js') }}?v=1.0.1"></script>
+@endpush
 <!DOCTYPE html>
 @include('client.main.html')
 
@@ -17,9 +20,9 @@
    <!-- Promo Section Start -->
    <section class="promo-sec bg-cover jarallax" data-jarallax data-speed=".4">
       @if($service->getFirstMediaUrl('cover'))
-      <img src="{{ $service->getFirstMediaUrl('cover') }}" alt="{{ $service->title }}" class="jarallax-img">
+      <img src="{{ $service->getFirstMediaUrl('cover') }}" alt="{{ $service->title }}" class="jarallax-img" fetchpriority="high" decoding="async" width="1920" height="800">
       @else
-      <img src="{{ asset('client/assets/images/2272.jpg') }}" alt="" class="jarallax-img">
+      <img src="{{ asset('client/assets/images/2272.jpg') }}" alt="" class="jarallax-img" fetchpriority="high" decoding="async" width="1920" height="800">
       @endif
       <div class="parallax-overly"></div>
       <div class="container">

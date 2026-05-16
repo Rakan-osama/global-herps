@@ -21,14 +21,17 @@
 
    <!-- Critical CSS — render-blocking (above-fold layout) -->
    <link rel="stylesheet" href="{{ asset('client/assets/css/bootstrap.min.css') }}?v={{ $assetVersion }}">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
    <link rel="stylesheet" href="{{ asset('client/assets/css/swiper-bundle.min.css') }}?v={{ $assetVersion }}">
-   <link rel="stylesheet" href="{{ asset('client/assets/css/jarallax.min.css') }}?v={{ $assetVersion }}">
    <link rel="stylesheet" href="{{ asset('client/assets/css/style.css') }}?v={{ $assetVersion }}">
+
+   <!-- FontAwesome CDN -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
    <!-- Page-specific CSS pushed by individual pages -->
    @stack('styles')
    <style>
+/* ── Jarallax (inlined — 169 bytes, removes 1 render-blocking request) ── */
+.jarallax{position:relative;z-index:0}.jarallax>.jarallax-img,picture.jarallax-img img{position:absolute;object-fit:cover;top:0;left:0;width:100%;height:100%;z-index:-1}
 /* ── Products page: filter tabs ──────────────────── */
 .prod-filter-wrap { padding: 0 10px; }
 .prod-filter-tabs {

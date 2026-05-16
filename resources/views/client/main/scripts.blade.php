@@ -7,13 +7,8 @@
    <script src="{{ asset('client/assets/js/gsap.min.js') }}?v={{ $assetVersion }}"></script>
    <script src="{{ asset('client/assets/js/ScrollTrigger.min.js') }}?v={{ $assetVersion }}"></script>
    <script src="{{ asset('client/assets/js/SplitText.js') }}?v={{ $assetVersion }}"></script>
-   <script src="{{ asset('client/assets/js/fancybox.umd.js') }}?v={{ $assetVersion }}"></script>
-   <script src="{{ asset('client/assets/js/isotope.pkgd.min.js') }}?v={{ $assetVersion }}"></script>
    <script src="{{ asset('client/assets/js/purecounter.js') }}?v={{ $assetVersion }}"></script>
-   <script src="{{ asset('client/assets/js/jquery.marquee.min.js') }}?v={{ $assetVersion }}"></script>
-   <script src="{{ asset('client/assets/js/jquery.nice-select.min.js') }}?v={{ $assetVersion }}"></script>
-   <script src="{{ asset('client/assets/js/jquery.timepicker.min.js') }}?v={{ $assetVersion }}"></script>
-   <script src="{{ asset('client/assets/js/bootstrap-datepicker.js') }}?v={{ $assetVersion }}"></script>
+   @stack('scripts')
    <script src="{{ asset('client/assets/js/custom.js') }}?v={{ $assetVersion }}"></script>
    <script>
    document.addEventListener('DOMContentLoaded', function () {

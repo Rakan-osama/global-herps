@@ -1,6 +1,6 @@
 <!-- Footer Start -->
    <footer class="footer bg-cover jarallax" data-jarallax data-speed=".2">
-      <img src="{{ asset('client/assets/images/footer-bg.jpg') }}" alt="" class="jarallax-img">
+      <img src="{{ asset('client/assets/images/footer-bg.jpg') }}" alt="" class="jarallax-img" loading="lazy" decoding="async" width="1920" height="600">
       <div class="parallax-overly"></div>
       <div class="container">
          {{-- <div class="d-md-flex justify-content-between align-items-center footer-top">

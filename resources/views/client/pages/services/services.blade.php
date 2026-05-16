@@ -1,6 +1,9 @@
 @push('styles')
 <link rel="stylesheet" href="{{ asset('client/assets/css/nice-select.css') }}?v=1.0.1">
 @endpush
+@push('scripts')
+<script src="{{ asset('client/assets/js/jquery.nice-select.min.js') }}?v=1.0.1"></script>
+@endpush
 <!DOCTYPE html>
 @include('client.main.html')
 
@@ -16,7 +19,7 @@
 
    <!-- Hero Section Start -->
    <section class="promo-sec bg-cover jarallax" data-jarallax data-speed=".4">
-      <img src="{{ asset('client/assets/images/herbs_images/spearmint.webp') }}" alt="" class="jarallax-img img-fluid">
+      <img src="{{ asset('client/assets/images/herbs_images/spearmint.webp') }}" alt="" class="jarallax-img img-fluid" fetchpriority="high" decoding="async" width="1920" height="800">
       <div class="parallax-overly"></div>
       <div class="container">
          <div class="row">
@@ -131,7 +134,7 @@
 
    <!-- Why Choose Section Start -->
    <section class="why-us3 sec-padding jarallax" data-jarallax data-speed=".4">
-      <img src="{{ asset('client/assets/images/herbs_images/moringa.webp') }}" class="jarallax-img" alt="">
+      <img src="{{ asset('client/assets/images/herbs_images/moringa.webp') }}" class="jarallax-img" alt="" loading="lazy" decoding="async" width="1920" height="800">
       <img src="{{ asset('client/assets/images/slide-anim_green.png') }}" class="abs-img bottom-0" alt="">
       <div class="container">
          <div class="row">

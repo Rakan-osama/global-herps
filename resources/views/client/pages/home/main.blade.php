@@ -1,5 +1,9 @@
 @push('styles')
+<link rel="preload" as="image" href="{{ asset('client/assets/images/herbs/1.webp') }}" type="image/webp" fetchpriority="high">
 <link rel="stylesheet" href="{{ asset('client/assets/css/nice-select.css') }}?v=1.0.1">
+@endpush
+@push('scripts')
+<script src="{{ asset('client/assets/js/jquery.nice-select.min.js') }}?v=1.0.1"></script>
 @endpush
 <!DOCTYPE html>
 @include('client.main.html')

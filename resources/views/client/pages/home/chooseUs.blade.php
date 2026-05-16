@@ -6,7 +6,7 @@
          <div class="col-lg-6">
             <div class="choose-media position-relative">
                <div class="choose-main-wrap">
-                  <img src="{{ asset('client/assets/images/herbs/6.webp') }}" alt="Egyptian Herbs">
+                  <img src="{{ asset('client/assets/images/herbs/6.webp') }}" alt="Egyptian Herbs" width="600" height="460" loading="lazy" decoding="async">
                </div>
                {{-- <div class="abs-img choose-abs-wrap">
                   <img src="{{ asset('client/assets/images/herbs/9.webp') }}" alt="Herbs Close Up">

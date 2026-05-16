@@ -13,7 +13,7 @@
          <div class="process-card text-center fadeInUp" data-delay=".2">
             <span class="count mx-auto icon-lg bg-shade rounded-circle">01</span>
             <div class="process-thumb rounded-circle d-flex align-items-center justify-content-center">
-               <img src="{{ asset('client/assets/images/st1.png') }}" alt="">
+               <img src="{{ asset('client/assets/images/st1.png') }}" alt="" width="60" height="60" loading="lazy" decoding="async">
             </div>
             <h3 class="display-4">{{ __('Farm Selection') }}</h3>
             <p>{{ __('We source from selected Egyptian farms known for optimal growing conditions, soil quality and consistent herb yield season after season.') }}</p>
@@ -22,7 +22,7 @@
          <div class="process-card text-center fadeInUp" data-delay=".4">
             <span class="count mx-auto icon-lg bg-shade rounded-circle">02</span>
             <div class="process-thumb rounded-circle d-flex align-items-center justify-content-center">
-               <img src="{{ asset('client/assets/images/st2.png') }}" alt="">
+               <img src="{{ asset('client/assets/images/st2.png') }}" alt="" width="60" height="60" loading="lazy" decoding="async">
             </div>
             <h3 class="display-4">{{ __('Drying & Cleaning') }}</h3>
             <p>{{ __('Controlled drying preserves essential oils and colour. Multi-step cleaning removes stems, dust and foreign matter to meet export specifications.') }}</p>
@@ -31,7 +31,7 @@
          <div class="process-card text-center fadeInUp" data-delay=".6">
             <span class="count mx-auto icon-lg bg-shade rounded-circle">03</span>
             <div class="process-thumb rounded-circle d-flex align-items-center justify-content-center">
-               <img src="{{ asset('client/assets/images/st3.png') }}" alt="">
+               <img src="{{ asset('client/assets/images/st3.png') }}" alt="" width="60" height="60" loading="lazy" decoding="async">
             </div>
             <h3 class="display-4">{{ __('Packaging & Export') }}</h3>
             <p>{{ __('Packed in export-grade materials to protect aroma and shelf life. Shipped to importers, tea packers and spice brands with full documentation.') }}</p>
