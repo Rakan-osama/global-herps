@@ -18,7 +18,7 @@ return [
         ['url' => 'https://instagram.com/global.herbs',        'icon' => 'fab fa-instagram'],
         ['url' => 'https://linkedin.com/company/global-herbs', 'icon' => 'fab fa-linkedin-in'],
         ['url' => 'https://twitter.com/global.herbs',          'icon' => 'fab fa-x-twitter'],
-        ['url' => 'https://tiktok.com/@global.herbs',          'icon' => 'fab fa-tiktok'],
+        // ['url' => 'https://tiktok.com/@global.herbs',          'icon' => 'fab fa-tiktok'],
     ],
 
     'whatsapp_link' => 'https://wa.me/201012608815',

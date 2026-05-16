@@ -6,10 +6,10 @@
          <div class="col-lg-6">
             <div class="choose-media position-relative">
                <div class="choose-main-wrap">
-                  <img src="{{ asset('client/assets/images/herbs/6.jpg') }}" alt="Egyptian Herbs">
+                  <img src="{{ asset('client/assets/images/herbs/6.webp') }}" alt="Egyptian Herbs">
                </div>
                {{-- <div class="abs-img choose-abs-wrap">
-                  <img src="{{ asset('client/assets/images/herbs/9.jpg') }}" alt="Herbs Close Up">
+                  <img src="{{ asset('client/assets/images/herbs/9.webp') }}" alt="Herbs Close Up">
                </div> --}}
             </div>
          </div>

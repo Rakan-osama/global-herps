@@ -123,7 +123,7 @@
           </button>
 
           <!-- Contact button and Language Switcher: show on xl+ only -->
-          <div class="nav-cta d-xl-flex order-xl-3 ms-3">
+          <div class="nav-cta d-none d-xl-flex order-xl-3 ms-3">
             <div class="d-flex align-items-center justify-content-between gap-3">
               <a href="{{ route('client.contact') }}" class="btn btn-primary btn-hover">
                 {{ __('Contact Us') }} <i class="fa fa-arrow-right"></i>

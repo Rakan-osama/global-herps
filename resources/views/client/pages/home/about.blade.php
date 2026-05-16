@@ -5,7 +5,7 @@
          <div class="col-lg-6">
             <div class="about-media position-relative">
                <div class="about-m1">
-                  <img class="round img-fluid" src="{{ asset('client/assets/images/herbs/1.jpg') }}" alt="" style="width: 460px; height: 370px; object-fit: cover;">
+                  <img class="round img-fluid" src="{{ asset('client/assets/images/herbs/1.webp') }}" alt="" style="width: 460px; height: 370px; object-fit: cover;">
                   <div class="ab-stat bg-primary round">
                      <span class="display-1 purecounter" data-purecounter-end="10" data-purecounter-decimals="0">10</span><span class="unit">+</span>
                      <p>{{ __('Years of Experience') }}</p>
@@ -16,7 +16,7 @@
                      <span class="display-1 purecounter" data-purecounter-end="50" data-purecounter-decimals="0">50</span><span class="unit">+</span>
                      <p>{{ __('Export Markets') }}</p>
                   </div>
-                  <img class="img-fluid" src="{{ asset('client/assets/images/herbs/2.jpg') }}" alt="" style="width: 250px; height: 370px; object-fit: cover;">
+                  <img class="img-fluid" src="{{ asset('client/assets/images/herbs/2.webp') }}" alt="" style="width: 250px; height: 370px; object-fit: cover;">
                </div>
             </div>
          </div>

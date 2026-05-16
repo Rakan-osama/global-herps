@@ -1,9 +1,9 @@
 @php
    $prods = $prods ?? null;
    $productTabs = $prods->additional_features ?? [
-      ['id' => 'air', 'nav_title' => 'Fresh Produce', 'nav_desc' => 'Premium quality fresh fruits and vegetables sourced from fertile Egyptian lands.', 'image' => 'tab-main1.jpg', 'card_title' => 'Fresh Fruits', 'card_desc' => 'Premium quality fresh fruits prepared for export markets'],
-      ['id' => 'byroad', 'nav_title' => 'Frozen Products', 'nav_desc' => 'Carefully processed frozen fruits and vegetables maintaining nutritional value.', 'image' => 'tab-main2.jpg', 'card_title' => 'Fresh Fruits', 'card_desc' => 'Premium quality fresh fruits prepared for export markets'],
-      ['id' => 'road', 'nav_title' => 'Citrus Fruits', 'nav_desc' => 'Egyptian citrus fruits known for exceptional taste and quality worldwide.', 'image' => 'tab-main3.jpg', 'card_title' => 'Citrus Export', 'card_desc' => 'Premium Egyptian citrus for global markets'],
+      ['id' => 'air', 'nav_title' => 'Fresh Produce', 'nav_desc' => 'Premium quality fresh fruits and vegetables sourced from fertile Egyptian lands.', 'image' => 'tab-main1.webp', 'card_title' => 'Fresh Fruits', 'card_desc' => 'Premium quality fresh fruits prepared for export markets'],
+      ['id' => 'byroad', 'nav_title' => 'Frozen Products', 'nav_desc' => 'Carefully processed frozen fruits and vegetables maintaining nutritional value.', 'image' => 'tab-main2.webp', 'card_title' => 'Fresh Fruits', 'card_desc' => 'Premium quality fresh fruits prepared for export markets'],
+      ['id' => 'road', 'nav_title' => 'Citrus Fruits', 'nav_desc' => 'Egyptian citrus fruits known for exceptional taste and quality worldwide.', 'image' => 'tab-main3.webp', 'card_title' => 'Citrus Export', 'card_desc' => 'Premium Egyptian citrus for global markets'],
    ];
 @endphp
 <!-- Operation Section Start -->
@@ -39,7 +39,7 @@
                <div class="tab-pane {{ $pi === 0 ? 'active' : '' }}" id="{{ $ptab['id'] ?? 'ptab'.$pi }}" role="tabpanel" aria-labelledby="{{ $ptab['id'] ?? 'ptab'.$pi }}-tab">
                   <div class="operation-content">
                      <div class="operation-thumb">
-                        <img src="{{ asset('client/assets/images/' . ($ptab['image'] ?? 'tab-main1.jpg')) }}" alt="tab">
+                        <img src="{{ asset('client/assets/images/' . ($ptab['image'] ?? 'tab-main1.webp')) }}" alt="tab">
                      </div>
                      <div class="opt-card bg-white  rounded-4">
                         <span><img src="{{ asset('client/assets/images/tab-icon_green.png') }}" alt=""></span>

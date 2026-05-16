@@ -7,7 +7,7 @@
          <!-- Slide 1 -->
          <div class="swiper-slide">
             <div class="slide-item position-relative">
-               <div class="item-bg" style="background-image: url('{{ asset('client/assets/images/herbs/1.jpg') }}');"></div>
+               <div class="item-bg" style="background-image: url('{{ asset('client/assets/images/herbs/1.webp') }}');"></div>
                <div class="slide-content">
                   <div class="parallax-txt"></div>
                   <span class="sub-title h5">{{ __('Premium Egyptian Exports') }}</span>
@@ -24,7 +24,7 @@
          <!-- Slide 2 -->
          <div class="swiper-slide">
             <div class="slide-item position-relative">
-               <div class="item-bg" style="background-image: url('{{ asset('client/assets/images/herbs/2.jpg') }}');"></div>
+               <div class="item-bg" style="background-image: url('{{ asset('client/assets/images/herbs/2.webp') }}');"></div>
                <div class="slide-content">
                   <div class="parallax-txt"></div>
                   <span class="sub-title h5">{{ __('Signature Egyptian Mint') }}</span>
@@ -42,7 +42,7 @@
          <!-- Slide 3 -->
          <div class="swiper-slide">
             <div class="slide-item position-relative">
-               <div class="item-bg" style="background-image: url('{{ asset('client/assets/images/herbs/3.jpg') }}');"></div>
+               <div class="item-bg" style="background-image: url('{{ asset('client/assets/images/herbs/3.webp') }}');"></div>
                <div class="slide-content">
                   <div class="parallax-txt"></div>
                   <span class="sub-title h5">{{ __('Long-Term Export Partners') }}</span>

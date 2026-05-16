@@ -1,10 +1,10 @@
 @php
    $team = $team ?? null;
    $teamMembers = $team->additional_features ?? [
-      ['name' => 'Jenny Noah', 'role' => 'Quality Control Manager', 'image' => 'tm1.jpg'],
-      ['name' => 'Jenny Mache', 'role' => 'Quality Control Manager', 'image' => 'tm2.jpg'],
-      ['name' => 'Sofia Melisa', 'role' => 'Export Operations Director', 'image' => 'tm3.jpg'],
-      ['name' => 'Shane Darren', 'role' => 'Quality Control Manager', 'image' => 'tm4.jpg'],
+      ['name' => 'Jenny Noah', 'role' => 'Quality Control Manager', 'image' => 'tm1.webp'],
+      ['name' => 'Jenny Mache', 'role' => 'Quality Control Manager', 'image' => 'tm2.webp'],
+      ['name' => 'Sofia Melisa', 'role' => 'Export Operations Director', 'image' => 'tm3.webp'],
+      ['name' => 'Shane Darren', 'role' => 'Quality Control Manager', 'image' => 'tm4.webp'],
    ];
 @endphp
 <!-- Team Section Start -->
@@ -20,7 +20,7 @@
          <div class="col-lg-3 col-sm-6">
             <div class="team-card">
                <div class="team-thumb round overflow-hidden">
-                  <img src="{{ asset('client/assets/images/' . ($member['image'] ?? 'tm1.jpg')) }}" alt="">
+                  <img src="{{ asset('client/assets/images/' . ($member['image'] ?? 'tm1.webp')) }}" alt="">
                   <div class="team-share">
                   </div>
                </div>
