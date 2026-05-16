@@ -3,7 +3,9 @@
     "allow": [
       "Bash(grep -o \"body{margin:[^}]*}\" \"C:/xampp/htdocs/green_harvest/public/client/assets/css/style.css\")",
       "Read(//c/xampp/htdocs/green_harvest/public/client/assets/css/**)",
-      "Bash(cd \"c:\\\\xampp\\\\htdocs\\\\global-herbs\" && sed -i 's/{{ _\\(/{{ __\\(/g' \"resources/views/client/pages/contact us/contactUs.blade.php\" && echo \"Done\")"
+      "Bash(cd \"c:\\\\xampp\\\\htdocs\\\\global-herbs\" && sed -i 's/{{ _\\(/{{ __\\(/g' \"resources/views/client/pages/contact us/contactUs.blade.php\" && echo \"Done\")",
+      "PowerShell(Get-Content \"c:\\\\xampp\\\\htdocs\\\\global-herbs\\\\public\\\\client\\\\assets\\\\css\\\\style.css\" | Select-String -Pattern \"url\\\\\\(\" | ForEach-Object { $_.Line.Trim\\(\\) } | Out-String)",
+      "PowerShell(Get-ChildItem \"c:\\\\xampp\\\\htdocs\\\\global-herbs\\\\public\\\\client\\\\assets\\\\images\" | Where-Object { $_.Name -match \"logo\" } | Select-Object -ExpandProperty Name)"
     ],
     "additionalDirectories": [
       "c:\\xampp\\htdocs\\global-herbs\\resources\\views\\client\\pages\\contact us"
