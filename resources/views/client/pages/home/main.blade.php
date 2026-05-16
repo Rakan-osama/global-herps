@@ -1,3 +1,6 @@
+@push('styles')
+<link rel="stylesheet" href="{{ asset('client/assets/css/nice-select.css') }}?v=1.0.1">
+@endpush
 <!DOCTYPE html>
 @include('client.main.html')
 
